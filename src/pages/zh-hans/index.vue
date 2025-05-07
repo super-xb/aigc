@@ -1,55 +1,55 @@
 <template>
   <div class="app">
     <!-- Navigation -->
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="#" class="logo">
-          dzine<span class="beta">BETA</span>
-        </a>
+<!--    <nav class="navbar">-->
+<!--      <div class="navbar-left">-->
+<!--        <a href="#" class="logo">-->
+<!--          dzine<span class="beta">BETA</span>-->
+<!--        </a>-->
 
-        <div class="nav-links">
-          <div class="dropdown">
-            <button class="dropdown-btn">
-              工具 <span class="dropdown-arrow">▼</span>
-            </button>
-          </div>
+<!--        <div class="nav-links">-->
+<!--          <div class="dropdown">-->
+<!--            <button class="dropdown-btn">-->
+<!--              工具 <span class="dropdown-arrow">▼</span>-->
+<!--            </button>-->
+<!--          </div>-->
 
-          <div class="dropdown">
-            <button class="dropdown-btn">
-              资源 <span class="dropdown-arrow">▼</span>
-            </button>
-          </div>
+<!--          <div class="dropdown">-->
+<!--            <button class="dropdown-btn">-->
+<!--              资源 <span class="dropdown-arrow">▼</span>-->
+<!--            </button>-->
+<!--          </div>-->
 
-          <a href="#pricing" class="nav-link">定价</a>
-          <a href="#api" class="nav-link">API</a>
-          <a href="#contact" class="nav-link">商务联系</a>
-          <a href="#demo" class="nav-link">体验版</a>
-        </div>
-      </div>
+<!--          <a href="#pricing" class="nav-link">定价</a>-->
+<!--          <a href="#api" class="nav-link">API</a>-->
+<!--          <a href="#contact" class="nav-link">商务联系</a>-->
+<!--          <a href="#demo" class="nav-link">体验版</a>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <div class="navbar-right">
-        <a href="#" class="nav-link" @click="showLoginModal = true">登录</a>
-        <button class="btn-primary">免费试用</button>
-      </div>
+<!--      <div class="navbar-right">-->
+<!--        <a href="#" class="nav-link" @click="showLoginModal = true">登录</a>-->
+<!--        <button class="btn-primary">免费试用</button>-->
+<!--      </div>-->
 
-      <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
+<!--      <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--      </button>-->
+<!--    </nav>-->
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" :class="{ 'open': mobileMenuOpen }">
-      <a href="#" class="mobile-link">工具</a>
-      <a href="#" class="mobile-link">资源</a>
-      <a href="#pricing" class="mobile-link">价格</a>
-      <a href="#api" class="mobile-link">API</a>
-      <a href="#contact" class="mobile-link">商务联系</a>
-      <a href="#demo" class="mobile-link">体验版</a>
-      <a href="#" class="mobile-link" @click="showLoginModal = true">登录</a>
-      <button class="btn-primary mobile-btn">免费试用</button>
-    </div>
+<!--    &lt;!&ndash; Mobile Menu &ndash;&gt;-->
+<!--    <div class="mobile-menu" :class="{ 'open': mobileMenuOpen }">-->
+<!--      <a href="#" class="mobile-link">工具</a>-->
+<!--      <a href="#" class="mobile-link">资源</a>-->
+<!--      <a href="#pricing" class="mobile-link">价格</a>-->
+<!--      <a href="#api" class="mobile-link">API</a>-->
+<!--      <a href="#contact" class="mobile-link">商务联系</a>-->
+<!--      <a href="#demo" class="mobile-link">体验版</a>-->
+<!--      <a href="#" class="mobile-link" @click="showLoginModal = true">登录</a>-->
+<!--      <button class="btn-primary mobile-btn">免费试用</button>-->
+<!--    </div>-->
 
     <!-- Hero Section -->
     <section class="hero">
@@ -880,25 +880,32 @@
         <div class="promo-decoration top-right"></div>
         <div class="promo-decoration bottom-left"></div>
 
-        <h3 class="promo-title">Spring Surprise</h3>
-        <div class="promo-discount">
-          <span class="discount-number">25</span>
-          <span class="discount-percent">%</span>
+        <h3 class="promo-title">请登录</h3>
+        <div class="promo-discount" style="display:none;">
+<!--          <span class="discount-number">25</span>-->
+<!--          <span class="discount-percent">%</span>-->
         </div>
-        <div class="discount-label">OFF</div>
-        <p class="promo-subtitle">Your Next Payment</p>
+        <div class="discount-label" style="display:none;">OFF</div>
+        <p class="promo-subtitle" style="display:none;">Your Next Payment</p>
 
-        <div class="promo-code">
-          <span class="code-label">Use code</span>
-          <span class="code">APRIL25</span>
-          <span class="code-label">at checkout</span>
+        <div class="promo-login">
+          <div class="login-form">
+            <div class="form-group">
+              <label for="email">邮箱</label>
+              <input type="email" id="email" placeholder="请输入邮箱">
+            </div>
+            <div class="form-group">
+              <label for="password">密码</label>
+              <input type="password" id="password" placeholder="请输入密码">
+            </div>
+          </div>
         </div>
 
-        <p class="promo-note">Hurry — offer valid for a limited time only!</p>
+        <p class="promo-note" style="display:none;">Hurry — offer valid for a limited time only!</p>
 
         <div class="promo-actions">
-          <button class="btn-outline" @click="showPromoPopup = false">Not now</button>
-          <button class="btn-primary">Learn more</button>
+          <button class="btn-outline" onclick="Popupclose()">关闭</button>
+          <button class="btn-primary" onclick="login()">登录</button>
         </div>
       </div>
     </div>

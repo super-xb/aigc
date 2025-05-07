@@ -1,53 +1,56 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import index from '@/pages/index.vue';
-import dashboard from '@/pages/dashboard.vue'
-import tool from '@/pages/tool.vue'
-import cn from '@/pages/index_cn.vue'
-import dashboard_cn from '@/pages/dashboard_cn.vue'
+// index.js
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import NotFound from "@/views/NotFound.vue";
+
+// 懒加载组件
+const HomeView = () => import('../views/HomeView.vue');
+const Index = () => import('@/pages/zh-hans/index.vue');
+const Dashboard = () => import('@/pages/zh-hans/dashboard.vue');
+const Tool = () => import('@/pages/zh-hans/tool.vue');
 
 
-
-
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
-
-  
   {
     path: '/',
-    name: 'index',
-    component: index
-  },
-
-  {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: dashboard
+    redirect: '/zh-hans',
   },
   {
-    path: '/dashboard/cn',
-    name: 'dashboard_cn',
-    component: dashboard_cn
+    path: '/zh-hans',
+    component: HomeView,
+    children: [
+      {
+        path: '',
+        name: 'home',
+        component: Index,
+        meta: { title: '首页' },
+      },
+      {
+        path: 'dashboard',
+        name: 'dashboard',
+        component: Dashboard,
+        meta: { title: '仪表盘' },
+      },
+      {
+        path: 'tool',
+        name: 'tool',
+        component: Tool,
+        meta: { title: '工具' },
+      }
+    ],
   },
   {
-    path: '/tool',
-    name: 'tool',
-    component:tool
+    path: '*',
+    name: '404',
+    component: NotFound, // 使用 NotFound 组件
   },
-  {
-    path: '/cn',
-    name: 'cn',
-    component:cn
-  },
-  
-
-
-]
+];
 
 const router = new VueRouter({
-  routes
-})
+  mode: 'history', // 使用历史模式
+  routes,
+});
 
-export default router
+export default router;

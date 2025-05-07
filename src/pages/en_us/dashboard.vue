@@ -3,8 +3,8 @@
       <!-- Left Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-header">
-          <a href="/" class="logo">
-            <img src="https://placeholder.pics/svg/120x40/333333/FFFFFF-333333/dzine" alt="Dzine Logo" class="logo-img">
+          <a href="/public" class="logo">  <!--改logo-->
+            <img src="/favicon.ico" alt="Dzine Logo" class="logo-img">
             <span class="beta-tag">BETA</span>
           </a>
         </div>
@@ -13,39 +13,39 @@
           <!-- User Profile -->
           <div class="user-profile">
             <div class="avatar">
-              <img src="https://placeholder.pics/svg/50x50/CCCCCC/666666-CCCCCC/user" alt="User Avatar">
+              <img src="/user.png" alt="User Avatar">
             </div>
             <div class="user-info">
-              <div class="user-id">username<span class="chevron">›</span></div>
-              <div class="user-plan">Free</div>
+              <div class="user-id">username<span class="chevron"></span></div>
+<!--              <div class="user-plan">Free</div>-->
             </div>
           </div>
   
           <!-- Credits -->
-          <div class="credits-section">
-            <div class="credits-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H6"/><path d="M12 18v2m0-16v2"/></svg>
-            </div>
-            <div class="credits-label">Credits</div>
-            <div class="credits-value">50</div>
-          </div>
+<!--          <div class="credits-section">-->
+<!--            <div class="credits-icon">-->
+<!--              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H6"/><path d="M12 18v2m0-16v2"/></svg>-->
+<!--            </div>-->
+<!--            <div class="credits-label">Credits</div>-->
+<!--            <div class="credits-value">50</div>-->
+<!--          </div>-->
   
-          <!-- Premium Promo -->
-          <div class="premium-promo">
-            <div class="crown-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>
-            </div>
-            <div class="premium-text">
-              <div class="premium-title">Try Premium for</div>
-              <div class="premium-subtitle">7-days Free!</div>
-            </div>
-          </div>
-  
-          <div class="premium-description">
-            Sign Up Today and Explore All the Benefits with a Free Trial Before You Decide.
-          </div>
-  
-          <button class="start-free-button">Start FREE Trial</button>
+<!--          &lt;!&ndash; Premium Promo &ndash;&gt;-->
+<!--          <div class="premium-promo">-->
+<!--            <div class="crown-icon">-->
+<!--              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>-->
+<!--            </div>-->
+<!--            <div class="premium-text">-->
+<!--              <div class="premium-title">Try Premium for</div>-->
+<!--              <div class="premium-subtitle">7-days Free!</div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--  -->
+<!--          <div class="premium-description">-->
+<!--            Sign Up Today and Explore All the Benefits with a Free Trial Before You Decide.-->
+<!--          </div>-->
+<!--  -->
+<!--          <button class="start-free-button">Start FREE Trial</button>-->
   
           <!-- Navigation Menu -->
           <nav class="sidebar-nav">
@@ -550,7 +550,7 @@
   }
   
   .beta-tag {
-    font-size: 0.6rem;
+    font-size: 2rem;
     color: #f5c518;
     margin-left: 4px;
     font-weight: 600;
@@ -591,6 +591,7 @@
   
   .user-id {
     font-weight: 600;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
