@@ -1,57 +1,5 @@
 <template>
   <div class="app">
-    <!-- Navigation -->
-<!--    <nav class="navbar">-->
-<!--      <div class="navbar-left">-->
-<!--        <a href="#" class="logo">-->
-<!--          dzine<span class="beta">BETA</span>-->
-<!--        </a>-->
-
-<!--        <div class="nav-links">-->
-<!--          <div class="dropdown">-->
-<!--            <button class="dropdown-btn">-->
-<!--              工具 <span class="dropdown-arrow">▼</span>-->
-<!--            </button>-->
-<!--          </div>-->
-
-<!--          <div class="dropdown">-->
-<!--            <button class="dropdown-btn">-->
-<!--              资源 <span class="dropdown-arrow">▼</span>-->
-<!--            </button>-->
-<!--          </div>-->
-
-<!--          <a href="#pricing" class="nav-link">定价</a>-->
-<!--          <a href="#api" class="nav-link">API</a>-->
-<!--          <a href="#contact" class="nav-link">商务联系</a>-->
-<!--          <a href="#demo" class="nav-link">体验版</a>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="navbar-right">-->
-<!--        <a href="#" class="nav-link" @click="showLoginModal = true">登录</a>-->
-<!--        <button class="btn-primary">免费试用</button>-->
-<!--      </div>-->
-
-<!--      <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen">-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--      </button>-->
-<!--    </nav>-->
-
-<!--    &lt;!&ndash; Mobile Menu &ndash;&gt;-->
-<!--    <div class="mobile-menu" :class="{ 'open': mobileMenuOpen }">-->
-<!--      <a href="#" class="mobile-link">工具</a>-->
-<!--      <a href="#" class="mobile-link">资源</a>-->
-<!--      <a href="#pricing" class="mobile-link">价格</a>-->
-<!--      <a href="#api" class="mobile-link">API</a>-->
-<!--      <a href="#contact" class="mobile-link">商务联系</a>-->
-<!--      <a href="#demo" class="mobile-link">体验版</a>-->
-<!--      <a href="#" class="mobile-link" @click="showLoginModal = true">登录</a>-->
-<!--      <button class="btn-primary mobile-btn">免费试用</button>-->
-<!--    </div>-->
-
-    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <h1 class="hero-title" >
@@ -425,118 +373,6 @@
         </div>
       </section>
     </div>
-    <!-- Features Section -->
-    <section class="features">
-      <h2 class="section-title">为什么选择我们？</h2>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-zap">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-            </svg>
-          </div>
-          <h3 class="feature-title">快速生成</h3>
-          <p class="feature-description">在几秒内生成高质量的视觉效果</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-sparkles">
-              <path
-                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
-              </path>
-              <path d="M5 3v4"></path>
-              <path d="M19 17v4"></path>
-              <path d="M3 5h4"></path>
-              <path d="M17 19h4"></path>
-            </svg>
-          </div>
-          <h3 class="feature-title">卓越品质</h3>
-          <p class="feature-description">不需要专业技能就能创造出专业级别的视觉效果</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-wallet">
-              <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
-              <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
-              <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
-            </svg>
-          </div>
-          <h3 class="feature-title">高性价比</h3>
-          <p class="feature-description">一键订购所有工具，为您节省开销</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-      <h2 class="section-title">定价透明公开</h2>
-      <p class="section-subtitle">根据需求选择最适合的套餐</p>
-
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-title">Basic</h3>
-            <div class="pricing-price">
-              <span class="price">$19</span>
-              <span class="period">/month</span>
-            </div>
-          </div>
-          <ul class="pricing-features">
-            <li>5 AI generations per day</li>
-            <li>Access to basic tools</li>
-            <li>720p resolution</li>
-            <li>Email support</li>
-          </ul>
-          <button class="btn-secondary">Get Started</button>
-        </div>
-
-        <div class="pricing-card featured">
-          <div class="pricing-badge">Popular</div>
-          <div class="pricing-header">
-            <h3 class="pricing-title">Pro</h3>
-            <div class="pricing-price">
-              <span class="price">$49</span>
-              <span class="period">/month</span>
-            </div>
-          </div>
-          <ul class="pricing-features">
-            <li>50 AI generations per day</li>
-            <li>Access to all tools</li>
-            <li>4K resolution</li>
-            <li>Priority support</li>
-            <li>Commercial usage</li>
-          </ul>
-          <button class="btn-primary">Get Started</button>
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-title">Enterprise</h3>
-            <div class="pricing-price">
-              <span class="price">Custom</span>
-            </div>
-          </div>
-          <ul class="pricing-features">
-            <li>Unlimited AI generations</li>
-            <li>Access to all tools + API</li>
-            <li>8K resolution</li>
-            <li>Dedicated support</li>
-            <li>Custom integrations</li>
-            <li>Team management</li>
-          </ul>
-          <button class="btn-secondary">Contact Sales</button>
-        </div>
-      </div>
-    </section>
     <section class="use-cases-section">
       <div class="container">
         <h2 class="use-cases-title">AI 图像生成使用秘籍</h2>
@@ -586,62 +422,6 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <h2 class="section-title">用户评价</h2>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            "工具完全改变了我们的创意工作流程。过去需要数小时才能完成的内容，现在只需要几分钟。"
-          </div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar"></div>
-            <div class="testimonial-info">
-              <div class="testimonial-name">Sarah Johnson</div>
-              <div class="testimonial-role">Marketing Director</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            "使用这个简单的工具，我就像有一个全天候待命的专业设计师。"
-          </div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar"></div>
-            <div class="testimonial-info">
-              <div class="testimonial-name">Michael Chen</div>
-              <div class="testimonial-role">E-commerce Entrepreneur</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-content">
-            "使用这个工具，我们将设计成本降低了70%，同时提高了30% 的生产量。"
-          </div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar"></div>
-            <div class="testimonial-info">
-              <div class="testimonial-name">Alex Rivera</div>
-              <div class="testimonial-role">Creative Director</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- CTA Section -->
-    <section class="cta">
-      <h2 class="cta-title">准备好进行一场视觉体验了吗？</h2>
-      <p class="cta-subtitle">加入成千上万的创作者和企业</p>
-         <!-- <button class="btn-primary btn-large">免费试用</button>
-  <p class="cta-note">No credit card required</p>-->
-    </section>
-
     <!-- New Footer Section Based on Image -->
     <div class="pre-footer">
       <div class="container">
@@ -870,46 +650,8 @@
           Don't have an account? <a href="#">Sign up</a>
         </p>
       </div>
-    </div>
-
-    <!-- Promo Popup -->
-    <div class="promo-popup" v-if="showPromoPopup">
-      <button class="promo-close" @click="showPromoPopup = false">×</button>
-
-      <div class="promo-content">
-        <div class="promo-decoration top-right"></div>
-        <div class="promo-decoration bottom-left"></div>
-
-        <h3 class="promo-title">请登录</h3>
-        <div class="promo-discount" style="display:none;">
-<!--          <span class="discount-number">25</span>-->
-<!--          <span class="discount-percent">%</span>-->
-        </div>
-        <div class="discount-label" style="display:none;">OFF</div>
-        <p class="promo-subtitle" style="display:none;">Your Next Payment</p>
-
-        <div class="promo-login">
-          <div class="login-form">
-            <div class="form-group">
-              <label for="email">邮箱</label>
-              <input type="email" id="email" placeholder="请输入邮箱">
-            </div>
-            <div class="form-group">
-              <label for="password">密码</label>
-              <input type="password" id="password" placeholder="请输入密码">
-            </div>
-          </div>
-        </div>
-
-        <p class="promo-note" style="display:none;">Hurry — offer valid for a limited time only!</p>
-
-        <div class="promo-actions">
-          <button class="btn-outline" onclick="Popupclose()">关闭</button>
-          <button class="btn-primary" onclick="login()">登录</button>
-        </div>
+    </div>y
       </div>
-    </div>
-  </div>
 </template>
 
 <script setup>
