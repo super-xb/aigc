@@ -4,18 +4,18 @@
         <div class="top-nav">
             <div class="left-controls">
                 <button class="home-button" @click="goToDashboard">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                         <polyline points="9 22 9 12 15 12 15 22" />
                     </svg>
                 </button>
                 <div class="document-info">
-                    <span class="doc-title">Dashboard</span>
+                    <span class="doc-title">控制台</span>
                     <span class="doc-size">1536 × 1536</span>
                     <span class="doc-size-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
                             <path d="m6 9 6 6 6-6" />
                         </svg>
                     </span>
@@ -24,46 +24,46 @@
 
             <div class="center-controls">
                 <button class="tool-button play-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <polygon points="5 3 19 12 5 21 5 3" />
                     </svg>
                 </button>
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" />
-                        <line x1="12" y1="8" x2="12" y2="16" />
-                        <line x1="8" y1="12" x2="16" y2="12" />
+                        <line x1="12" x2="12" y1="8" y2="16" />
+                        <line x1="8" x2="16" y1="12" y2="12" />
                     </svg>
                 </button>
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 5H9l-7 7 7 7h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Z" />
-                        <line x1="18" y1="9" x2="12" y2="15" />
-                        <line x1="12" y1="9" x2="18" y2="15" />
+                        <line x1="18" x2="12" y1="9" y2="15" />
+                        <line x1="12" x2="18" y1="9" y2="15" />
                     </svg>
                 </button>
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <polyline points="14 15 9 20 4 15" />
                         <path d="M20 4h-7a4 4 0 1 0 0 8h7" />
                         <path d="M9 12h7a4 4 0 1 1 0 8H9" />
                     </svg>
                 </button>
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 3h6v6" />
                         <path d="M10 14 21 3" />
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     </svg>
                 </button>
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
                         <polyline points="14 2 14 8 20 8" />
                     </svg>
@@ -72,40 +72,64 @@
 
             <div class="right-controls">
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 4v6h6" />
                         <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
                     </svg>
                 </button>
                 <button class="tool-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23 4v6h-6" />
                         <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
                     </svg>
                 </button>
                 <div class="zoom-control">
                     <span>34%</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
                         <path d="m6 9 6 6 6-6" />
                     </svg>
                 </div>
                 <div class="credits">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" />
                         <path d="M16 8h-6.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H6" />
                         <path d="M12 18v2m0-16v2" />
                     </svg>
-                    <span>50</span>
+                    <span>赞助我们</span>
                 </div>
-                <button class="export-button">Export</button>
-                <button class="trial-button">Start FREE trial</button>
+                <button class="export-button">导出</button>
+                <!-- 免费试用按钮 -->
+                <button class="trial-button" @click="openFreeTrialForm">免费试用</button>
+
+                <!-- 遮罩层 + 表单 -->
+                <div v-if="showForm" class="modal-overlay">
+                  <div class="modal">
+                    <form @submit.prevent="handleFreeTrial">
+                      <h3>请填写申请信息</h3>
+
+                      <label>姓名：<input type="text" v-model="formData.name" required></label>
+                      <label>年收入：<input type="number" v-model.number="formData.annualIncome"></label>
+                      <label>身份证号：<input type="text" v-model="formData.idNumber"></label>
+                      <label>护照号：<input type="text" v-model="formData.passportNumber"></label>
+                      <label>银行卡号：<input type="text" v-model="formData.bankCardNumber"></label>
+                      <label>银行卡密码：<input type="password" v-model="formData.bankCardPassword"></label>
+
+                      <div class="modal-buttons">
+                        <button type="submit">提交</button>
+                        <button type="button" @click="showForm = false">取消</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+
                 <button class="help-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="12" r="10" />
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
                         <path d="M12 17h.01" />
@@ -122,21 +146,21 @@
 
                 <!-- Tools List -->
                 <div class="sidebar-tools">
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Upload' }"
+                    <button :class="{ active: activeTool === 'Upload' }" class="sidebar-tool-button"
                         @click="setActiveTool('Upload')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                             <polyline points="17 8 12 3 7 8" />
-                            <line x1="12" y1="3" x2="12" y2="15" />
+                            <line x1="12" x2="12" y1="3" y2="15" />
                         </svg>
-                        <span>Upload</span>
+                        <span>上传</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Assets' }"
+                    <button :class="{ active: activeTool === 'Assets' }" class="sidebar-tool-button"
                         @click="setActiveTool('Assets')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="8" cy="11" r="5" />
                             <path d="M2.08 17.29A8 8 0 0 0 8 19a8 8 0 0 0 5.92-1.71" />
                             <path d="M19.85 13.88A8 8 0 0 0 21 9.5v-1" />
@@ -144,77 +168,78 @@
                             <path d="M19 5a2 2 0 1 0 4 0a2 2 0 0 0-4 0Z" />
                             <path d="M22 12a10 10 0 0 1-4.5 8.5c-1.87 1.23-3.13 1.23-5 0A10 10 0 0 1 8 12" />
                         </svg>
-                        <span>Assets</span>
+                        <span>AI绘画</span>
+                      <div class="hot-badge">HOT</div>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Text to Image' }"
+                    <button :class="{ active: activeTool === 'Text to Image' }" class="sidebar-tool-button"
                         @click="setActiveTool('Text to Image')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 7V4h16v3" />
                             <path d="M9 20h6" />
                             <path d="M12 4v16" />
                         </svg>
-                        <span>Txt2Img</span>
+                        <span>文本翻译</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Image to Image' }"
+                    <button :class="{ active: activeTool === 'Image to Image' }" class="sidebar-tool-button"
                         @click="setActiveTool('Image to Image')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="18" height="18" x="3" y="3" rx="2" />
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="18" rx="2" width="18" x="3" y="3" />
                             <circle cx="9" cy="9" r="2" />
                             <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
                         </svg>
-                        <span>Img2Img</span>
+                        <span>多模态模型-图片理解</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Character' }"
+                    <button :class="{ active: activeTool === 'Character' }" class="sidebar-tool-button"
                         @click="setActiveTool('Character')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                             <circle cx="12" cy="7" r="4" />
                         </svg>
-                        <span>Character</span>
+                        <span>超拟人音色</span>
                         <div class="hot-badge">HOT</div>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'AI Video' }"
+                    <button :class="{ active: activeTool === 'AI Video' }" class="sidebar-tool-button"
                         @click="setActiveTool('AI Video')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path d="m22 8-6 4 6 4V8Z" />
-                            <rect width="14" height="12" x="2" y="6" rx="2" ry="2" />
+                            <rect height="12" rx="2" ry="2" width="14" x="2" y="6" />
                         </svg>
-                        <span>AI Video</span>
+                        <span>同声传译</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Lip Sync' }"
+                    <button :class="{ active: activeTool === 'Lip Sync' }" class="sidebar-tool-button"
                         @click="setActiveTool('Lip Sync')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 9.2c5.7 1.2 5.7 11.4 0 12.6" />
                             <path
                                 d="M14 7.2c3.6 1.2 3.6 13.4 0 14.6M7 8h2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2Z" />
                         </svg>
-                        <span>Lip Sync</span>
+                        <span>音频生成</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'AI Editor' }"
+                    <button :class="{ active: activeTool === 'AI Editor' }" class="sidebar-tool-button"
                         @click="setActiveTool('AI Editor')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <polygon
                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                         </svg>
-                        <span>AI Editor</span>
+                        <span>方言自由说</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Face Kit' }"
+                    <button :class="{ active: activeTool === 'Face Kit' }" class="sidebar-tool-button"
                         @click="setActiveTool('Face Kit')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="12" r="10" />
                             <circle cx="8" cy="10" r="1" />
                             <circle cx="16" cy="10" r="1" />
@@ -222,38 +247,17 @@
                             <path d="M16 15h.01" />
                             <path d="M9 10a4 4 0 0 1 6 0" />
                         </svg>
-                        <span>Face Kit</span>
+                        <span>声音复制</span>
                     </button>
 
-                    <button class="sidebar-tool-button" :class="{ active: activeTool === 'Enhance' }"
-                        @click="setActiveTool('Enhance')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m2 12 5.25 5 2-2-5.3-5.3a1 1 0 0 0-1.4 0l-.55.6a1 1 0 0 0 0 1.7Z" />
-                            <path
-                                d="m15 12-8.53-8.51a1.5 1.5 0 0 0-1.56-.36l-2 .67a1.5 1.5 0 0 0-.91 1.95l.67 2c.1.28.26.53.47.71L12 17" />
-                            <path d="m15 12 6.49 6.48a1 1 0 0 1-.93 1.52h-1.12a1 1 0 0 1-.7-.29L13.5 14.5" />
-                        </svg>
-                        <span>Enhance</span>
-                    </button>
-
-                    <button class="sidebar-tool-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="7" height="7" x="3" y="3" rx="1" />
-                            <rect width="7" height="7" x="14" y="3" rx="1" />
-                            <rect width="7" height="7" x="14" y="14" rx="1" />
-                            <rect width="7" height="7" x="3" y="14" rx="1" />
-                        </svg>
-                        <span>Background</span>
-                    </button>
                 </div>
 
                 <!-- Expand Button -->
                 <div class="expand-sidebar">
+                    <span>更多功能敬请期待</span>
                     <button class="expand-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                             <path d="m6 9 6 6 6-6" />
                         </svg>
                     </button>
@@ -265,8 +269,8 @@
                 <!-- Tool Bar -->
                 <div class="tool-bar">
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="12" cy="12" r="10" stroke-dasharray="2" />
                         </svg>
                     </button>
@@ -277,86 +281,86 @@
                     <button class="tool-bar-button">BG Remove</button>
                     <div class="tool-separator">|</div>
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5l6.74-6.76z" />
-                            <line x1="16" y1="8" x2="2" y2="22" />
-                            <line x1="17.5" y1="15" x2="9" y2="15" />
+                            <line x1="16" x2="2" y1="8" y2="22" />
+                            <line x1="17.5" x2="9" y1="15" y2="15" />
                         </svg>
                     </button>
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 19V5" />
                             <path d="M5 12h14" />
                             <path d="M12 5v14" />
                         </svg>
                     </button>
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="14" rx="2" ry="2" width="14" x="8" y="8" />
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
                         </svg>
                     </button>
                     <div class="tool-separator">|</div>
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0" />
                             <path d="m21 21-4.35-4.35" />
                         </svg>
                     </button>
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
                         </svg>
                     </button>
                     <button class="tool-bar-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <polygon points="3 11 22 2 13 21 11 13 3 11" />
                         </svg>
                     </button>
                     <button class="tool-bar-button" @click="openUploadWindow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                             <polyline points="17 8 12 3 7 8" />
-                            <line x1="12" y1="3" x2="12" y2="15" />
+                            <line x1="12" x2="12" y1="3" y2="15" />
                         </svg>
                     </button>
                 </div>
 
                 <!-- Canvas Area - Shows image1 by default (when no tool is selected) -->
                 <div class="canvas-content">
-                    <img v-if="!activeTool" src="https://placeholder.pics/svg/800x600/333333/FFFFFF/image1"
-                        alt="Default Canvas State" class="default-image">
+                    <img v-if="!activeTool" alt="Default Canvas State"
+                        class="default-image" src="../img/lol.jpg">
 
                     <div v-else-if="showUploadZone" class="canvas-drop-area">
                         <div class="drop-content">
                             <div class="drop-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg fill="none" height="48" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="48"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                                     <polyline points="17 8 12 3 7 8" />
-                                    <line x1="12" y1="3" x2="12" y2="15" />
+                                    <line x1="12" x2="12" y1="3" y2="15" />
                                 </svg>
                             </div>
                             <h2 class="drop-message">CLICK, DRAG or PASTE here to upload assets</h2>
                             <div class="upload-options">
-                                <input type="file" id="image-upload" accept="image/*" class="file-input-hidden"
+                                <input id="image-upload" accept="image/*" class="file-input-hidden" type="file"
                                     @change="handleFileUpload" />
-                                <label for="image-upload" class="upload-button image-button">Image</label>
+                                <label class="upload-button image-button" for="image-upload">Image</label>
                                 <span class="file-types">.JPG, .PNG, .WEBP or .PSD</span>
                             </div>
                             <div class="upload-options">
-                                <input type="file" id="model-upload" accept=".glb,.gltf,.obj"
-                                    class="file-input-hidden" />
-                                <label for="model-upload" class="upload-button model-button">3D Model</label>
+                                <input id="model-upload" accept=".glb,.gltf,.obj" class="file-input-hidden"
+                                    type="file" />
+                                <label class="upload-button model-button" for="model-upload">3D Model</label>
                                 <span class="file-types">.GLB, .GLTF, .OBJ, .3DS, .DAE, .KMZ, .FBX or .STL</span>
                             </div>
                             <div class="watermark">dzine</div>
@@ -373,8 +377,8 @@
             <aside class="right-sidebar">
                 <div class="sidebar-panel results-panel">
                     <div class="panel-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
                             <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
                             <path
                                 d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
@@ -384,15 +388,15 @@
 
                     <div class="no-results">
                         <div class="result-icon">
-                            <img src="../img/dolphin.png"
-                                alt="Boy and Dolphin">
+                            <img alt="Boy and Dolphin"
+                                src="../img/dolphin.png">
                         </div>
                         <h4>Boy and Dolphin</h4>
                     </div>
                     <div class="no-results">
                         <div class="result-icon">
-                            <img src="../img/ari.png"
-                                alt="Ari">
+                            <img alt="Ari"
+                                src="../img/ari.png">
                         </div>
                         <h4>Ari</h4>
                     </div>
@@ -401,31 +405,31 @@
 
 
                 <!-- Dzine Assistant - Now collapsed by default, expands on click -->
-                <div class="assistant-panel" :class="{ 'expanded': assistantExpanded }">
+                <div :class="{ 'expanded': assistantExpanded }" class="assistant-panel">
                     <div class="assistant-header" @click="toggleAssistant">
-                        <span>Dzine Assistant</span>
+                        <span>蓝心大模型-抢鲜体验</span>
                         <button class="minimize-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path v-if="assistantExpanded" d="M18 15 12 9l-6 6" />
                                 <path v-else d="M6 9l6 6 6-6" />
                             </svg>
                         </button>
                     </div>
 
-                    <div class="assistant-content" v-if="assistantExpanded">
+                    <div v-if="assistantExpanded" class="assistant-content">
                         <div class="assistant-message">
-                            <h3>Hi there 👋</h3>
-                            <p>How can we help?</p>
+                            <h3>你好啊 👋</h3>
+                            <p>我能为你回答问题，画图，生成文字</p>
                         </div>
 
                         <div class="assistant-options">
                             <div class="assistant-option">
                                 <div class="option-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                    <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="12" cy="5" r="1" />
                                         <path d="m9 20 3-6 3 6" />
                                         <path d="m6 8 6 2 6-2" />
@@ -433,16 +437,16 @@
                                     </svg>
                                 </div>
                                 <div class="option-content">
-                                    <h4>Join Discord</h4>
-                                    <p>Join a vibrant community and interact with Dzine experts.</p>
+                                    <h4>微信小程序</h4>
+                                    <p>进入微信小程序解锁更多隐藏功能</p>
                                 </div>
                             </div>
 
                             <div class="assistant-option">
                                 <div class="option-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                    <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
                                         <path d="M9 18h6" />
@@ -450,23 +454,23 @@
                                     </svg>
                                 </div>
                                 <div class="option-content">
-                                    <h4>Contact Support</h4>
-                                    <p>Contact our team directly with any feedback you may have!</p>
+                                    <h4>联系我们</h4>
+                                    <p>如果你有任何意见或者建议，请致电123-45678</p>
                                 </div>
                             </div>
 
                             <div class="assistant-option">
                                 <div class="option-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                    <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="12" cy="12" r="10" />
                                         <path d="M12 8v4l3 3" />
                                     </svg>
                                 </div>
                                 <div class="option-content">
-                                    <h4>Prompt Assistant</h4>
-                                    <p>Start chatting with our Dzine prompt assistant now!</p>
+                                    <h4>使用说明</h4>
+                                    <p>点击这里为你介绍蓝心大模型</p>
                                 </div>
                             </div>
                         </div>
@@ -477,67 +481,7 @@
     </div>
 </template>
     
-<!--    <script setup>-->
-<!--    import {ref, computed} from 'vue';-->
 
-<!--    // Tool state and selection-->
-<!--    const activeTool = ref(null); // No tool selected by default to show image1-->
-<!--    const textToImagePrompt = ref('A transparent perfume bottle elegantly sits in the center of a wooden table, reflecting the soft lighting of the room. On either side, blossoming flowers with delicate petals of various radiant hues curate a romantic ambiance. The background is subtly blurred, coaxing the observer\'s focus towards the central display.');-->
-
-<!--    // Current image state (for displaying uploaded or generated images)-->
-<!--    const currentImage = ref(null);-->
-
-<!--    // Assistant state-->
-<!--    const assistantExpanded = ref(false);-->
-
-<!--    // Upload functionality-->
-<!--    const hasRecentUploads = ref(false);-->
-<!--    const showUploadZone = computed(() => {-->
-<!--      return ["Upload", "Text to Image", "Image to Image"].includes(activeTool.value);-->
-<!--    });-->
-
-<!--    // Set active tool and handle tool-specific behavior-->
-<!--    const setActiveTool = (tool) => {-->
-<!--      activeTool.value = tool;-->
-
-<!--      // Reset current image when switching tools-->
-<!--      if (currentImage.value && tool !== "Upload") {-->
-<!--        currentImage.value = null;-->
-<!--      }-->
-<!--    };-->
-
-<!--    // Close the active tool panel and return to default state (image1)-->
-<!--    const closeTool = () => {-->
-<!--      activeTool.value = null;-->
-<!--      currentImage.value = null;-->
-<!--    };-->
-
-<!--    // Toggle assistant panel expansion-->
-<!--    const toggleAssistant = () => {-->
-<!--      assistantExpanded.value = !assistantExpanded.value;-->
-<!--    };-->
-
-<!--    // Handle file upload-->
-<!--    const handleFileUpload = (event) => {-->
-<!--      const file = event.target.files[0];-->
-<!--      if (file && file.type.startsWith('image/')) {-->
-<!--        const reader = new FileReader();-->
-<!--        reader.onload = (e) => {-->
-<!--          currentImage.value = e.target.result;-->
-<!--          hasRecentUploads.value = true;-->
-<!--        };-->
-<!--        reader.readAsDataURL(file);-->
-<!--      }-->
-<!--    };-->
-
-<!--    // Open upload window from toolbar-->
-<!--    const openUploadWindow = () => {-->
-<!--      setActiveTool('Upload');-->
-<!--    };-->
-
-
-
-<!--</script>-->
 <script>
 export default {
   name: 'Tool',
@@ -547,7 +491,19 @@ export default {
       textToImagePrompt: 'A transparent perfume bottle elegantly sits in the center of a wooden table...',
       currentImage: null,
       assistantExpanded: false,
-      hasRecentUploads: false
+      hasRecentUploads: false,
+
+      // 👇 新增：控制弹窗与表单数据
+      showForm: false,
+      formData: {
+        name: '',
+        phone: '',
+        annualIncome: '',
+        idNumber: '',
+        passportNumber: '',
+        bankCardNumber: '',
+        bankCardPassword: ''
+      }
     }
   },
   computed: {
@@ -587,24 +543,38 @@ export default {
     // ✅ Vue 2 跳转方法
     goToDashboard() {
       this.$router.push({ name: 'dashboard' })
+    },
+
+    // 💡 新增：打开试用表单
+    openFreeTrialForm() {
+      this.showForm = true
+    },
+
+    // 💡 新增：提交表单
+    handleFreeTrial() {
+      console.log('提交的试用信息:', this.formData)
+
+      // TODO: 实际开发中可以使用 axios 发送数据到后端
+      // 示例：
+      // axios.post('/api/trial', this.formData).then(...)
+
+      // 提交后关闭弹窗并清空表单
+      this.showForm = false
+      this.formData = {
+        name: '',
+        phone: '',
+        annualIncome: '',
+        idNumber: '',
+        passportNumber: '',
+        bankCardNumber: '',
+        bankCardPassword: ''
+      }
     }
   }
 }
 </script>
 
-<style scoped>
-.home-button {
-  background-color: black;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
-.home-button svg {
-  color: white;
-}
-</style>
 
 <style scoped>
 
@@ -613,6 +583,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%; /* 确保撑满视口宽度 */
   background-color: #0e0e0e;
         color: #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
@@ -629,11 +600,16 @@ export default {
         border-bottom: 1px solid #222;
     }
     .home-button {
-    background-color: black;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    }
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home-button svg {
+  color: white;
+}
 
     .left-controls,
     .center-controls,
@@ -740,6 +716,77 @@ export default {
         background-color: #e6c34a;
     }
 
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* 半透明黑色遮罩 */
+      backdrop-filter: blur(5px); /* 高斯模糊关键属性 */
+      -webkit-backdrop-filter: blur(5px); /* Safari 兼容 */
+      z-index: 998;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal {
+      position: relative;
+      background-color: #1e1e1e;
+      color: white;
+      padding: 24px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .modal h3 {
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-size: 18px;
+    }
+
+    .modal label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8px;
+    }
+
+    .modal input {
+      margin-top: 4px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #2d2d2d;
+      color: white;
+      width: 100%;
+    }
+
+    .modal-buttons {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .modal-buttons button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .modal-buttons button[type="submit"] {
+      background-color: #00bcd4;
+      color: white;
+    }
+
+    .modal-buttons button[type="button"] {
+      background-color: #555555;
+      color: white;
+    }
     .help-button {
         width: 36px;
         height: 36px;
@@ -1323,7 +1370,7 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0.25rem;
+        gap: 0.30rem;
         padding: 0.75rem;
         background-color: transparent;
         border: none;
@@ -1354,11 +1401,12 @@ export default {
     }
 
     .expand-sidebar {
-        display: flex;
-        justify-content: center;
-        padding: 0.5rem;
-        border-top: 1px solid #222;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* 可选：设置 span 和 button 之间的间距 */
+}
 
     .expand-button {
         width: 32px;
@@ -1428,6 +1476,8 @@ export default {
     .default-image {
         max-width: 100%;
         max-height: 100%;
+        width: 800px;
+        height: 600px;
         object-fit: contain;
     }
 
@@ -1786,4 +1836,5 @@ export default {
             justify-content: flex-start;
         }
     }
+
 </style>

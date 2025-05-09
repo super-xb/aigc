@@ -5,47 +5,52 @@
 </template>
 
 <style lang="scss">
-body{
+
+/* 全局重置 */
+* {
   margin: 0;
-  background: #f1f6fd;
-  height: 100vh;
-  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
 }
-/**
-@font-face {
-  font-family: 'Alibaba PuHuiTi';
-  src: url('../../road_sys/src/assets/AlibabaPuHuiTi-3/AlibabaPuHuiTi-3-35-Thin/AlibabaPuHuiTi-3-35-Thin.ttf');
-} */
-#app {
-  /**font-family: Avenir, Helvetica, Arial, sans-serif;**/
-  //font-family: 'Alibaba PuHuiTi';
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  overflow-y: scroll;
+  background-color: #0e0e0e;
   color: #fff;
-  
+  overflow-x: hidden;
 }
-button{
-  //font-family: 'Alibaba PuHuiTi';
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0e0e;
+  color: #fff;
+  font-size: 16px;
+}
+
+button {
   cursor: pointer;
   border: 0;
   font-weight: 700;
-  //font-size: 16px;
   color: #FFFFFF;
 }
 
-input{
-  border:0;
+input {
+  border: 0;
 }
 
-input:focus-visible{
+input:focus-visible {
   border: 0;
-  outline:0;
+  outline: 0;
 }
 
 nav {
-  padding: 0px;
+  padding: 0;
 
   a {
     font-weight: bold;
