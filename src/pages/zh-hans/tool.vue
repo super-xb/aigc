@@ -11,7 +11,7 @@
                     </svg>
                 </button>
                 <div class="document-info">
-                    <span class="doc-title">Home</span>
+                    <span class="doc-title">Dashboard</span>
                     <span class="doc-size">1536 × 1536</span>
                     <span class="doc-size-toggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -384,17 +384,17 @@
 
                     <div class="no-results">
                         <div class="result-icon">
-                            <img src="https://placeholder.pics/svg/100x100/DEDEDE/555555-DEDEDE/no-results"
-                                alt="No Results">
+                            <img src="../img/dolphin.png"
+                                alt="Boy and Dolphin">
                         </div>
-                        <h4>No Results Available</h4>
+                        <h4>Boy and Dolphin</h4>
                     </div>
                     <div class="no-results">
                         <div class="result-icon">
-                            <img src="https://placeholder.pics/svg/100x100/DEDEDE/555555-DEDEDE/no-results"
-                                alt="No Results">
+                            <img src="../img/ari.png"
+                                alt="Ari">
                         </div>
-                        <h4>No Results Available</h4>
+                        <h4>Ari</h4>
                     </div>
                 </div>
 
@@ -477,67 +477,134 @@
     </div>
 </template>
     
-    <script setup>
-    import {ref, computed} from 'vue';
+<!--    <script setup>-->
+<!--    import {ref, computed} from 'vue';-->
 
-    // Tool state and selection
-    const activeTool = ref(null); // No tool selected by default to show image1
-    const textToImagePrompt = ref('A transparent perfume bottle elegantly sits in the center of a wooden table, reflecting the soft lighting of the room. On either side, blossoming flowers with delicate petals of various radiant hues curate a romantic ambiance. The background is subtly blurred, coaxing the observer\'s focus towards the central display.');
+<!--    // Tool state and selection-->
+<!--    const activeTool = ref(null); // No tool selected by default to show image1-->
+<!--    const textToImagePrompt = ref('A transparent perfume bottle elegantly sits in the center of a wooden table, reflecting the soft lighting of the room. On either side, blossoming flowers with delicate petals of various radiant hues curate a romantic ambiance. The background is subtly blurred, coaxing the observer\'s focus towards the central display.');-->
 
-    // Current image state (for displaying uploaded or generated images)
-    const currentImage = ref(null);
+<!--    // Current image state (for displaying uploaded or generated images)-->
+<!--    const currentImage = ref(null);-->
 
-    // Assistant state
-    const assistantExpanded = ref(false);
+<!--    // Assistant state-->
+<!--    const assistantExpanded = ref(false);-->
 
-    // Upload functionality
-    const hasRecentUploads = ref(false);
-    const showUploadZone = computed(() => {
-      return ["Upload", "Text to Image", "Image to Image"].includes(activeTool.value);
-    });
+<!--    // Upload functionality-->
+<!--    const hasRecentUploads = ref(false);-->
+<!--    const showUploadZone = computed(() => {-->
+<!--      return ["Upload", "Text to Image", "Image to Image"].includes(activeTool.value);-->
+<!--    });-->
 
-    // Set active tool and handle tool-specific behavior
-    const setActiveTool = (tool) => {
-      activeTool.value = tool;
+<!--    // Set active tool and handle tool-specific behavior-->
+<!--    const setActiveTool = (tool) => {-->
+<!--      activeTool.value = tool;-->
 
-      // Reset current image when switching tools
-      if (currentImage.value && tool !== "Upload") {
-        currentImage.value = null;
+<!--      // Reset current image when switching tools-->
+<!--      if (currentImage.value && tool !== "Upload") {-->
+<!--        currentImage.value = null;-->
+<!--      }-->
+<!--    };-->
+
+<!--    // Close the active tool panel and return to default state (image1)-->
+<!--    const closeTool = () => {-->
+<!--      activeTool.value = null;-->
+<!--      currentImage.value = null;-->
+<!--    };-->
+
+<!--    // Toggle assistant panel expansion-->
+<!--    const toggleAssistant = () => {-->
+<!--      assistantExpanded.value = !assistantExpanded.value;-->
+<!--    };-->
+
+<!--    // Handle file upload-->
+<!--    const handleFileUpload = (event) => {-->
+<!--      const file = event.target.files[0];-->
+<!--      if (file && file.type.startsWith('image/')) {-->
+<!--        const reader = new FileReader();-->
+<!--        reader.onload = (e) => {-->
+<!--          currentImage.value = e.target.result;-->
+<!--          hasRecentUploads.value = true;-->
+<!--        };-->
+<!--        reader.readAsDataURL(file);-->
+<!--      }-->
+<!--    };-->
+
+<!--    // Open upload window from toolbar-->
+<!--    const openUploadWindow = () => {-->
+<!--      setActiveTool('Upload');-->
+<!--    };-->
+
+
+
+<!--</script>-->
+<script>
+export default {
+  name: 'Tool',
+  data() {
+    return {
+      activeTool: null,
+      textToImagePrompt: 'A transparent perfume bottle elegantly sits in the center of a wooden table...',
+      currentImage: null,
+      assistantExpanded: false,
+      hasRecentUploads: false
+    }
+  },
+  computed: {
+    showUploadZone() {
+      return ["Upload", "Text to Image", "Image to Image"].includes(this.activeTool)
+    }
+  },
+  methods: {
+    setActiveTool(tool) {
+      this.activeTool = tool
+      if (this.currentImage && tool !== "Upload") {
+        this.currentImage = null
       }
-    };
-
-    // Close the active tool panel and return to default state (image1)
-    const closeTool = () => {
-      activeTool.value = null;
-      currentImage.value = null;
-    };
-
-    // Toggle assistant panel expansion
-    const toggleAssistant = () => {
-      assistantExpanded.value = !assistantExpanded.value;
-    };
-
-    // Handle file upload
-    const handleFileUpload = (event) => {
-      const file = event.target.files[0];
+    },
+    closeTool() {
+      this.activeTool = null
+      this.currentImage = null
+    },
+    toggleAssistant() {
+      this.assistantExpanded = !this.assistantExpanded
+    },
+    handleFileUpload(event) {
+      const file = event.target.files[0]
       if (file && file.type.startsWith('image/')) {
-        const reader = new FileReader();
+        const reader = new FileReader()
         reader.onload = (e) => {
-          currentImage.value = e.target.result;
-          hasRecentUploads.value = true;
-        };
-        reader.readAsDataURL(file);
+          this.currentImage = e.target.result
+          this.hasRecentUploads = true
+        }
+        reader.readAsDataURL(file)
       }
-    };
+    },
+    openUploadWindow() {
+      this.setActiveTool('Upload')
+    },
 
-    // Open upload window from toolbar
-    const openUploadWindow = () => {
-      setActiveTool('Upload');
-    };
-
-
-
+    // ✅ Vue 2 跳转方法
+    goToDashboard() {
+      this.$router.push({ name: 'dashboard' })
+    }
+  }
+}
 </script>
+
+<style scoped>
+.home-button {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home-button svg {
+  color: white;
+}
+</style>
 
 <style scoped>
 
@@ -1518,6 +1585,18 @@
         margin-bottom: 1rem;
     }
 
+    .result-icon img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+  }
+
+    @media (max-width: 768px) {
+        .result-icon img {
+            width: 80px;
+            height: 80px;
+        }
+  }
     .layer-list {
         padding: 1rem;
     }
