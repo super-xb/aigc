@@ -3,7 +3,7 @@
         <!-- Top Navigation Bar -->
         <div class="top-nav">
             <div class="left-controls">
-                <button class="home-button">
+                <button class="home-button" @click="goToDashboard">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -11,7 +11,7 @@
                     </svg>
                 </button>
                 <div class="document-info">
-                    <span class="doc-title">Untitled</span>
+                    <span class="doc-title">Home</span>
                     <span class="doc-size">1536 × 1536</span>
                     <span class="doc-size-toggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -389,41 +389,16 @@
                         </div>
                         <h4>No Results Available</h4>
                     </div>
-                </div>
-
-                <div class="sidebar-panel layers-panel">
-                    <div class="panel-header">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m2 17 10 5 10-5" />
-                            <path d="m2 12 10 5 10-5" />
-                            <path d="m2 7 10 5 10-5" />
-                            <path d="M12 2 2 7l10 5 10-5-10-5Z" />
-                        </svg>
-                        <h3>Layers</h3>
-                        <button class="close-panel">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M18 6 6 18" />
-                                <path d="m6 6 12 12" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="layer-list">
-                        <div class="layer-item">
-                            <div class="layer-thumbnail">
-                                <img src="https://placeholder.pics/svg/50x50/DEDEDE/555555-DEDEDE/bg"
-                                    alt="Background Layer">
-                            </div>
-                            <div class="layer-info">
-                                <h4>Background</h4>
-                                <span>No Fill</span>
-                            </div>
+                    <div class="no-results">
+                        <div class="result-icon">
+                            <img src="https://placeholder.pics/svg/100x100/DEDEDE/555555-DEDEDE/no-results"
+                                alt="No Results">
                         </div>
+                        <h4>No Results Available</h4>
                     </div>
                 </div>
+
+
 
                 <!-- Dzine Assistant - Now collapsed by default, expands on click -->
                 <div class="assistant-panel" :class="{ 'expanded': assistantExpanded }">
@@ -503,7 +478,7 @@
 </template>
     
     <script setup>
-    import { ref, computed } from 'vue';
+    import {ref, computed} from 'vue';
 
     // Tool state and selection
     const activeTool = ref(null); // No tool selected by default to show image1
@@ -518,57 +493,60 @@
     // Upload functionality
     const hasRecentUploads = ref(false);
     const showUploadZone = computed(() => {
-        return ["Upload", "Text to Image", "Image to Image"].includes(activeTool.value);
+      return ["Upload", "Text to Image", "Image to Image"].includes(activeTool.value);
     });
 
     // Set active tool and handle tool-specific behavior
     const setActiveTool = (tool) => {
-        activeTool.value = tool;
+      activeTool.value = tool;
 
-        // Reset current image when switching tools
-        if (currentImage.value && tool !== "Upload") {
-            currentImage.value = null;
-        }
+      // Reset current image when switching tools
+      if (currentImage.value && tool !== "Upload") {
+        currentImage.value = null;
+      }
     };
 
     // Close the active tool panel and return to default state (image1)
     const closeTool = () => {
-        activeTool.value = null;
-        currentImage.value = null;
+      activeTool.value = null;
+      currentImage.value = null;
     };
 
     // Toggle assistant panel expansion
     const toggleAssistant = () => {
-        assistantExpanded.value = !assistantExpanded.value;
+      assistantExpanded.value = !assistantExpanded.value;
     };
 
     // Handle file upload
     const handleFileUpload = (event) => {
-        const file = event.target.files[0];
-        if (file && file.type.startsWith('image/')) {
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                currentImage.value = e.target.result;
-                hasRecentUploads.value = true;
-            };
-            reader.readAsDataURL(file);
-        }
+      const file = event.target.files[0];
+      if (file && file.type.startsWith('image/')) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          currentImage.value = e.target.result;
+          hasRecentUploads.value = true;
+        };
+        reader.readAsDataURL(file);
+      }
     };
 
     // Open upload window from toolbar
     const openUploadWindow = () => {
-        setActiveTool('Upload');
+      setActiveTool('Upload');
     };
-</script>
-    
-    <style scoped>
 
-    /* Main Layout */
-    .editor-layout {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        background-color: #0e0e0e;
+
+
+</script>
+
+<style scoped>
+
+/* Main Layout */
+.editor-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0e0e0e;
         color: #ffffff;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     }
@@ -582,6 +560,12 @@
         padding: 0 1rem;
         background-color: #1a1a1a;
         border-bottom: 1px solid #222;
+    }
+    .home-button {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
     }
 
     .left-controls,
