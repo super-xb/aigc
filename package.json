@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",
+    "ant-design-vue": "^1.7.8",
     "axios": "^1.7.2",
     "cadviewer": "^9.87.3",
     "caniuse-lite": "^1.0.30001713",

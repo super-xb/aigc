@@ -8,6 +8,7 @@ const HomeView = () => import('../views/HomeView.vue');
 const Index = () => import('@/pages/zh-hans/index.vue');
 const Dashboard = () => import('@/pages/zh-hans/dashboard.vue');
 const Tool = () => import('@/pages/zh-hans/tool.vue');
+const Inspiration = () => import('@/pages/zh-hans/inspiration.vue');
 
 
 Vue.use(VueRouter);
@@ -38,8 +39,15 @@ const routes = [
         name: 'tool',
         component: Tool,
         meta: { title: '工具' },
-      }
+      },
+
     ],
+  },
+  {
+    path: '/inspiration',
+    name: 'inspiration',
+    component: Inspiration,
+    meta: { title: '灵感' }
   },
   {
     path: '*',
