@@ -1,106 +1,164 @@
+
+
 <template>
-  <a-layout id="components-layout-demo-responsive" style="min-height: 100vh; background-color: #1a1a1a; color: white;">
+  <div id="app" style="min-height: 100vh; background-color: #1a1a1a; color: white; display: flex; flex-direction: row;">
     <!-- 左侧导航 -->
-    <a-layout-sider
-      breakpoint="lg"
-      collapsed-width="0"
-      @collapse="onCollapse"
-      @breakpoint="onBreakpoint"
-      style="background-color: #141414;"
-    >
-      <div class="logo" />
-      <a-menu
-        theme="dark"
-        mode="inline"
-        :default-selected-keys="['2']"
-        style="background-color: #141414; color: white; padding-top: 20px;"
-      >
-        <a-menu-item key="1" class="custom-menu-item">
-          <span class="menu-content">
-            <a-icon type="user" class="menu-icon" />
-            <span class="nav-text">当前会话</span>
-          </span>
-        </a-menu-item>
-        <a-menu-item key="2" class="custom-menu-item">
-          <span class="menu-content">
-            <a-icon type="video-camera" class="menu-icon" />
-            <span class="nav-text">历史会话 1</span>
-          </span>
-        </a-menu-item>
-        <a-menu-item key="3" class="custom-menu-item">
-          <span class="menu-content">
-            <a-icon type="upload" class="menu-icon" />
-            <span class="nav-text">历史会话 2</span>
-          </span>
-        </a-menu-item>
-        <a-menu-item key="4" class="custom-menu-item">
-          <span class="menu-content">
-            <a-icon type="user" class="menu-icon" />
-            <span class="nav-text">历史会话 3</span>
-          </span>
-        </a-menu-item>
-      </a-menu>
-    </a-layout-sider>
+    <div style="width: 260px; background-color: #1a1a1a; box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2); padding: 20px; flex-shrink: 0;">
+      <a href="/zh-hans/" style="display: block; text-align: center; margin-bottom: 20px;">
+        <img src="../img/logo.png" alt="Logo" style="height: 80px; width: auto; filter: brightness(1.2); border-radius: 8px;" />
+      </a>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="margin-bottom: 30px;">
+          <div 
+            style="display: flex; align-items: center; padding: 10px 20px; border-radius: 8px; cursor: pointer;" 
+            :class="{'selected': currentSession, 'normal': !currentSession}" 
+            @click="handleCurrentSession"
+          >
+            <span style="font-size: 24px; color: white; margin-right: 16px;">👤</span>
+            <span style="font-size: 16px; color: white;">当前会话</span>
+          </div>
+        </li>
+        <li style="margin-bottom: 30px;">
+          <div 
+            style="display: flex; align-items: center; padding: 10px 20px; border-radius: 8px; cursor: pointer;" 
+            :class="{'selected': historySession1, 'normal': !historySession1}" 
+            @click="handleHistorySession(1)"
+          >
+            <span style="font-size: 24px; color: orangered; margin-right: 16px;">⏳</span>
+            <span style="font-size: 16px; color: white;">历史会话 1</span>
+          </div>
+        </li>
+        <li style="margin-bottom: 30px;">
+          <div 
+            style="display: flex; align-items: center; padding: 10px 20px; border-radius: 8px; cursor: pointer;" 
+            :class="{'selected': historySession2, 'normal': !historySession2}" 
+            @click="handleHistorySession(2)"
+          >
+            <span style="font-size: 24px; color: orangered; margin-right: 16px;">📄</span>
+            <span style="font-size: 16px; color: white;">历史会话 2</span>
+          </div>
+        </li>
+        <li style="margin-bottom: 30px;">
+          <div 
+            style="display: flex; align-items: center; padding: 10px 20px; border-radius: 8px; cursor: pointer;" 
+            :class="{'selected': historySession3, 'normal': !historySession3}" 
+            @click="handleHistorySession(3)"
+          >
+            <span style="font-size: 24px; color: orangered; margin-right: 16px;">📁</span>
+            <span style="font-size: 16px; color: white;">历史会话 3</span>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <!-- 右侧内容区域 -->
-    <a-layout style="background-color: #1a1a1a;">
-      <a-layout-header
-        :style="{ background: '#141414', padding: '0 16px', color: 'white' }"
-      >
-        欢迎来到灵感圣地
-      </a-layout-header>
+    <div style="flex: 1; display: flex; flex-direction: column;">
+      <!-- Header -->
+      <div style="background-color: #1a1a1a; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">
+        <h1 style="margin: 0; font-size: 28px; font-weight: bold; letter-spacing: 1px; color: #ffffff;">Welcome to Kingdom of Inspiration</h1>
+        <button style="background-color: #007bff; border: none; font-size: 16px; padding: 8px 20px; border-radius: 20px; color: white; cursor: pointer;">Logout</button>
+      </div>
 
-      <!-- 新增：搜索框 -->
-        <a-input-search
-      placeholder="input search text"
-      enter-button
-      @search="onSearch"
-      class="custom-search-input"
-    />
-
-      <a-layout-content
-        :style="{ margin: '24px 16px 0', color: 'white' }"
-      >
-        <div
-          :style="{
-            padding: '24px',
-            background: '#222',
-            minHeight: '360px',
-          }"
-        >
-          content
+      <!-- 搜索栏 -->
+      <div style="display: flex; justify-content: center; margin: 24px 0;">
+        <div style="display: flex; width: 80%; max-width: 600px; background-color: #2a2a2a; border-radius: 30px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);">
+          <input
+            type="text"
+            placeholder="输入关键词搜索..."
+            v-model="searchQuery"
+            @keyup.enter="onSearch"
+            style="flex: 1; height: 70px; line-height: 70px; font-size: 18px; padding: 0 20px; border: none; border-radius: 30px 0 0 30px; background-color: #1a1a1a; color: white; outline: none;"
+          />
+          <button
+            style="height: 70px; line-height: 70px; padding: 0 24px; border: none; border-radius: 0 30px 30px 0; background-color: #007bff; color: white; font-weight: bold; font-size: 18px; cursor: pointer;"
+            @click="onSearch"
+          >
+            Search
+          </button>
         </div>
-      </a-layout-content>
+      </div>
 
-      <a-layout-footer
-        style="text-align: center; background-color: #141414; color: white;"
-      >
-        Ant Design ©2018 Created by Ant UED
-      </a-layout-footer>
-    </a-layout>
-  </a-layout>
+      <!-- 内容区 -->
+      <div style="flex: 1; margin: 24px; padding: 24px; background-color: #1a1a1a; border-radius: 16px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);">
+        <div v-if="showImage" style="text-align: center;">
+          <img src="../img/inspiration.png" alt="Inspiration" style="max-width: 23%; height:auto; border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);" />
+        </div>
+        <div v-else style="color: white; font-size: 20px; text-align: center; line-height: 1.6;">
+          <p>Welcome to your inspiration dashboard. Start exploring!</p>
+          <button
+            style="margin-top: 20px; font-size: 18px; padding: 12px 28px; border-radius: 24px; background-color: #007bff; color: white; border: none; cursor: pointer;"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="text-align: center; background-color: #1a1a1a; color: white; padding: 20px; font-size: 14px; letter-spacing: 0.5px;">
+        Inspiration Hub ©2023 Created by Wang Wang Team
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      searchQuery: '',
+      showImage: false,
+      currentSession: true,
+      historySession1: false,
+      historySession2: false,
+      historySession3: false,
+    };
+  },
   methods: {
-    onCollapse(collapsed, type) {
-      console.log('Collapse:', collapsed, type);
+    onSearch() {
+      if (this.searchQuery.trim() !== '') {
+        this.showImage = true;
+      }
     },
-    onBreakpoint(broken) {
-      console.log('Breakpoint:', broken);
+    handleCurrentSession() {
+      this.currentSession = true;
+      this.historySession1 = false;
+      this.historySession2 = false;
+      this.historySession3 = false;
     },
-    onSearch(value) {
-      console.log(value);
+    handleHistorySession(sessionNumber) {
+      this.currentSession = false;
+      switch (sessionNumber) {
+        case 1:
+          this.historySession1 = true;
+          this.historySession2 = false;
+          this.historySession3 = false;
+          break;
+        case 2:
+          this.historySession1 = false;
+          this.historySession2 = true;
+          this.historySession3 = false;
+          break;
+        case 3:
+          this.historySession1 = false;
+          this.historySession2 = false;
+          this.historySession3 = true;
+          break;
+      }
     },
   },
-
-
 };
-
 </script>
 
 <style scoped>
+.selected {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.normal {
+  background-color: transparent;
+  color: white;
+}
 #components-layout-demo-responsive .logo {
   height: 32px;
   background: #2d2d2d;
@@ -120,53 +178,80 @@ export default {
   align-items: center;
 }
 
-/* 图标大小 */
 .menu-icon {
   font-size: 24px;
   color: orangered;
   margin-right: 16px;
 }
 
-/* 导航文字样式 */
 .nav-text {
   font-size: 16px;
   vertical-align: middle;
   color: white;
 }
 
-/* 选中状态样式 */
 .ant-menu-item-selected {
-  background-color: rebeccapurple !important; /* 蓝色背景 */
-  color: white !important; /* 白色文字 */
+  background-color: rebeccapurple !important;
+  color: white !important;
 }
 
 .ant-menu-item-selected .menu-icon {
-  color: white !important; /* 白色图标 */
+  color: white !important;
 }
 
+/* 搜索栏外层容器，用于控制整体居中 */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
 
+/* 自定义搜索框样式 */
 .custom-search-input {
   width: 80%;
-  margin: 24px auto; /* 居中并加点上下间距 */
+  max-width: 600px;
 }
 
 /* 覆盖输入框样式 */
 .custom-search-input .ant-input {
-  height: 50px;
-  line-height: 50px;
-  font-size: 16px;
-  padding: 0 15px;
-  background-color: #f0f0f0; /* 白色背景 */
-  border: 1px solid #ccc; /* 边框 */
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 0 20px;
+  border-radius: 30px 0 0 30px;
+  background-color: #f0f0f0;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* 覆盖按钮样式 */
 .custom-search-input .ant-btn {
-  height: 50px;
-  line-height: 50px;
-  background-color: #007bff; /* 搜索按钮背景色 */
+  height: 70px;
+  line-height: 70px;
+  padding: 0 24px;
+  border-radius: 0 30px 30px 0;
+  background-color: #007bff;
   color: white;
   border: none;
+  font-weight: bold;
 }
 
+/* 搜索前缀图标 */
+.custom-search-input .ant-input-affix-wrapper .ant-input-prefix {
+  margin-right: 10px;
+}
+
+/* 内容区域 */
+.ant-layout-content {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Footer 样式 */
+.ant-layout-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* 其他样式保持不变 */
 </style>
