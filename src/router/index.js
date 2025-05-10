@@ -9,7 +9,7 @@ const Index = () => import('@/pages/zh-hans/index.vue');
 const Dashboard = () => import('@/pages/zh-hans/dashboard.vue');
 const Tool = () => import('@/pages/zh-hans/tool.vue');
 const Inspiration = () => import('@/pages/zh-hans/inspiration.vue');
-
+const Gallery = () => import('@/pages/zh-hans/gallery.vue');
 
 Vue.use(VueRouter);
 
@@ -35,6 +35,12 @@ const routes = [
         meta: { title: '仪表盘' },
       },
       {
+        path: 'gallery',
+        name: 'gallery',
+        component: Gallery,
+        meta: { title: '画册' },
+      },
+      {
         path: 'tool',
         name: 'tool',
         component: Tool,
@@ -42,6 +48,12 @@ const routes = [
       },
 
     ],
+  },
+  {
+    path: '/gallery',
+    name: '/gallery',
+    component: Gallery,
+    meta: { title: '画册' },
   },
   {
     path: '/inspiration',

@@ -1,10 +1,11 @@
 
 
 <template>
+
   <div id="app" style="min-height: 100vh; background-color: #1a1a1a; color: white; display: flex; flex-direction: row;">
     <!-- 左侧导航 -->
     <div style="width: 260px; background-color: #1a1a1a; box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2); padding: 20px; flex-shrink: 0;">
-      <a href="/zh-hans/" style="display: block; text-align: center; margin-bottom: 20px;">
+      <a href="/gallery" style="display: block; text-align: center; margin-bottom: 20px;">
         <img src="../img/logo.png" alt="Logo" style="height: 80px; width: auto; filter: brightness(1.2); border-radius: 8px;" />
       </a>
       <ul style="list-style: none; padding: 0; margin: 0;">
@@ -254,4 +255,6 @@ export default {
   width: 100%;
 }
 /* 其他样式保持不变 */
+
+
 </style>

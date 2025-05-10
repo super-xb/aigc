@@ -12,7 +12,7 @@
             <li class="nav-item"><a href="/home" class="nav-link">首页</a></li>
             <li class="nav-item"><a href="/tutorials" class="nav-link">绘画教程</a></li>
             <li class="nav-item"><a href="/inspiration" class="nav-link">创意灵感</a></li>
-            <li class="nav-item"><a href="/community" class="nav-link">社区作品</a></li>
+            <li class="nav-item"><a href="/gallery" class="nav-link">社区作品</a></li>
             <li class="nav-item"><a href="/profile" class="nav-link">个人中心</a></li>
             <li class="nav-item"><a href="/help" class="nav-link">帮助中心</a></li>
           </ul>

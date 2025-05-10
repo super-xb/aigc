@@ -3,10 +3,10 @@
       <!-- Left Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-header">
-          <a href="/public" class="logo">
+          <!-- <a href="/public" class="logo">
             <img src="/favicon.ico" alt="Dzine Logo" class="logo-img">
             <span class="beta-tag">BETA</span>
-          </a>
+          </a> -->
         </div>
   
         <div class="sidebar-content">
@@ -538,7 +538,7 @@
   
   .sidebar-header {
     padding: 1.5rem;
-    border-bottom: 1px solid #222;
+    border-bottom: 13px solid #222;
   }
   
   .logo {
