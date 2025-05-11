@@ -1,0 +1,24 @@
+/* ====================== */
+/* === 特性功能区域 === */
+/* ====================== */
+
+.features {
+  padding: 4rem 2rem;
+  background-color: var(--color-secondary);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--color-foreground);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -2,15 +2,15 @@
   <div class="app">
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title" >
-          一次性获取所有<br>
-          AI图像工具
+        <h1 class="hero-title">
+          创意绘画伙伴 <br>
+          -您的AI绘画助手
         </h1>
         <p class="hero-subtitle">
-          节省您的时间和金钱：不再需要在昂贵的AI设计应用程序之间切换        
+          释放想象力，探索无限可能
         </p>
         <button class="hero-button">
-          今日 <strong>免费</strong> 试用
+          开始创作
         </button>
       </div>
     </section>
@@ -23,32 +23,25 @@
           <div class="tool-card tool-image-to-image">
             <div class="tool-header">
               <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect width="18" height="18" x="3" y="3" rx="2" />
-                  <circle cx="9" cy="9" r="2" />
-                  <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                <svg t="1746792800864" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="4053" width="30" height="30">
+                  <path
+                    d="M 511.991 158.56 l 326.944 204.163 l -326.944 204.163 l -326.926 -204.163 L 511.991 158.56 M 512 81.564 c -11.307 0 -22.613 2.691 -31.247 8.075 L 74.716 343.222 c -17.249 10.767 -17.249 28.235 0 39.02 l 406.037 253.565 c 8.634 5.401 19.94 8.093 31.247 8.093 c 11.297 0 22.605 -2.691 31.229 -8.093 l 406.055 -253.565 c 17.25 -10.785 17.25 -28.253 0 -39.02 L 543.229 89.639 c -8.624 -5.383 -19.932 -8.075 -31.229 -8.075 Z"
+                    p-id="4054" fill="#ffffff"></path>
+                  <path
+                    d="M 512 942.436 c -158.396 0 -318.75 -49.109 -318.75 -142.97 V 452.298 h 75 v 347.167 c 0 19.721 85.419 67.969 243.75 67.969 c 158.332 0 243.75 -48.248 243.75 -67.969 V 452.298 h 75 v 347.167 c 0 93.861 -160.354 142.971 -318.75 142.971 Z"
+                    p-id="4055" fill="#ffffff"></path>
+                  <path
+                    d="M 899.104 321.616 c 20.709 0 37.5 16.791 37.5 37.5 v 225 c 0 20.709 -16.791 37.499 -37.5 37.499 s -37.5 -16.79 -37.5 -37.499 v -225 c 0 -20.71 16.791 -37.5 37.5 -37.5 Z"
+                    p-id="4056" fill="#ffffff"></path>
                 </svg>
               </div>
-              <h3 class="tool-name">图生图</h3>
+              <h3 class="tool-name">绘画学习助手</h3>
             </div>
             <div class="tool-content">
               <div class="demo-container">
-                <div class="before-image">
-                  <span class="tag">原图</span>
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/image-to-image.png" alt="Sketch">
-                </div>
-                <div class="transform-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <path d="M15 3h6v6" />
-                    <path d="m10 14 11-11" />
-                  </svg>
-                </div>
-                <div class="after-image">
-                  <span class="tag">生图</span>
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/image-to-image.png" alt="Generated Photo">
+                <div class="tool-content">
+                  <img src="@/assets/images/1.png" alt="完整作品" style="width:100%;">
                 </div>
               </div>
             </div>
@@ -57,30 +50,30 @@
           <div class="tool-card tool-text-to-image">
             <div class="tool-header">
               <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 7V4h16v3" />
-                  <path d="M9 20h6" />
-                  <path d="M12 4v16" />
+                <svg t="1746792903952" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="5136" width="30" height="30">
+                  <path
+                    d="M538.29 128.76C273.15 113.42 51.93 332.29 64.51 597.57A445.51 445.51 0 0 0 133.65 816a450.67 450.67 0 0 0 40.51 54.23A74.83 74.83 0 0 0 230.53 896h562.94a74.83 74.83 0 0 0 56.37-25.77A450.67 450.67 0 0 0 890.35 816 445.9 445.9 0 0 0 960 576c0-238.6-186.53-433.63-421.71-447.24z m265.28 671.79A39.87 39.87 0 0 1 772 816H252a39.79 39.79 0 0 1-31.55-15.41A366.32 366.32 0 0 1 144 579.13c-1.66-200.21 158.07-365.81 358.22-371C709.93 202.74 880 369.51 880 576a366.4 366.4 0 0 1-76.43 224.55z"
+                    fill="#ffffff" p-id="5137"></path>
+                  <path d="M512 296m-40 0a40 40 0 1 0 80 0 40 40 0 1 0-80 0Z" fill="#ffffff" p-id="5138"></path>
+                  <path d="M311.54 379.04m-40 0a40 40 0 1 0 80 0 40 40 0 1 0-80 0Z" fill="#ffffff" p-id="5139"></path>
+                  <path d="M228.5 579.5m-40 0a40 40 0 1 0 80 0 40 40 0 1 0-80 0Z" fill="#ffffff" p-id="5140"></path>
+                  <path d="M795.5 579.5m-40 0a40 40 0 1 0 80 0 40 40 0 1 0-80 0Z" fill="#ffffff" p-id="5141"></path>
+                  <path d="M712.47 379.04m-40 0a40 40 0 1 0 80 0 40 40 0 1 0-80 0Z" fill="#ffffff" p-id="5142"></path>
+                  <path
+                    d="M591.84 401a32 32 0 0 0-40.2 20.78L502.86 575a96 96 0 1 0 61 19.41l48.77-153.19A32 32 0 0 0 591.84 401z"
+                    fill="#ffffff" p-id="5143"></path>
                 </svg>
               </div>
-              <h3 class="tool-name">文转图</h3>
+              <h3 class="tool-name">创意灵感生成器</h3>
             </div>
             <div class="tool-content">
               <div class="demo-container">
-                <div class="text-prompt">
-                  <p>西湖<br>醋鱼</p>
-                </div>
                 <div class="transform-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <path d="M15 3h6v6" />
-                    <path d="m10 14 11-11" />
-                  </svg>
+
                 </div>
-                <div class="generated-image">
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/text-to-image.png" alt="Generated Food">
+                <div class="tool-content">
+                  <img src="@/assets/images/2.png" alt="完整作品" style="width:100%;">
                 </div>
               </div>
             </div>
@@ -95,171 +88,32 @@
                   <path d="M20 21v-2a5 5 0 0 0-5-5h-6a5 5 0 0 0-5 5v2" />
                 </svg>
               </div>
-              <h3 class="tool-name">固定角色</h3>
+              <h3 class="tool-name">绘画技巧提升</h3>
             </div>
             <div class="tool-content">
-              <div class="character-grid">
-                <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/consistent-character.png" alt="Character 1">
-                <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/consistent-character.png" alt="Character 2">
-                <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/consistent-character.png" alt="Character 3">
-                <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/consistent-character.png" alt="Character 4">
-              </div>
+                  <img src="@/assets/images/3.png" alt="完整作品" style="width:100%;">
             </div>
           </div>
 
           <div class="tool-card tool-image-to-video">
             <div class="tool-header">
               <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m22 8-6 4 6 4V8Z" />
-                  <rect width="14" height="12" x="2" y="6" rx="2" ry="2" />
-                </svg>
-              </div>
-              <h3 class="tool-name">图生视频</h3>
-            </div>
-            <div class="tool-content">
-              <div class="video-demo">
-                <div class="video-preview">
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/image-to-video.png" alt="Video Preview">
-                  <div class="play-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10" />
-                      <polygon points="10 8 16 12 10 16 10 8" fill="white" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="video-frames">
-                  <img src="https://placeholder.pics/svg/200x60/CCCCCC/666666-CCCCCC/frames" alt="Video Frames">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="tool-card tool-insert-object">
-            <div class="tool-header">
-              <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10" stroke-dasharray="4 4" />
-                  <line x1="12" y1="8" x2="12" y2="16" />
-                  <line x1="8" y1="12" x2="16" y2="12" />
-                </svg>
-              </div>
-              <h3 class="tool-name">插入物品</h3>
-            </div>
-            <div class="tool-content">
-              <div class="demo-container">
-                <div class="before-image">
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/insert-object.png" alt="Dog">
-                </div>
-                <div class="transform-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <path d="M15 3h6v6" />
-                    <path d="m10 14 11-11" />
-                  </svg>
-                </div>
-                
-                <div class="after-image">
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/insert-object.png" alt="Dog with Hat">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tool-card tool-ai-eraser">
-            <div class="tool-header">
-              <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m20 20-6-6m2-4a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
-                </svg>
-              </div>
-              <h3 class="tool-name">AI擦除</h3>
-            </div>
-            <div class="tool-content">
-              <div class="eraser-demo">
-                <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/ai-eraser.png" alt="Dog with Eraser">
-                <div class="eraser-circle">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 3h18v18H3z" />
-                    <path d="M15 9h.01M9 15h.01" />
-                    <path d="m15 15-6-6" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tool-card tool-expand">
-            <div class="tool-header">
-              <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15 3h6v6" />
-                  <path d="M9 21H3v-6" />
-                  <path d="m21 3-7 7" />
-                  <path d="m3 21 7-7" />
-                </svg>
-              </div>
-              <h3 class="tool-name">扩展</h3>
-            </div>
-            <div class="tool-content">
-              <div class="expand-demo">
-                <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/expand.png" alt="Portrait">
-                <div class="expand-arrows">
-                  <div class="arrow left">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m15 18-6-6 6-6" />
-                    </svg>
-                  </div>
-                  <div class="arrow right">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="m9 18 6-6-6-6" />
-                    </svg>
-                  </div>
-                  <div class="corner top-left"></div>
-                  <div class="corner top-right"></div>
-                  <div class="corner bottom-left"></div>
-                  <div class="corner bottom-right"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tool-card tool-enhance">
-            <div class="tool-header">
-              <div class="tool-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m2 12 5.25 5 2-2-5.3-5.3a1 1 0 0 0-1.4 0l-.55.6a1 1 0 0 0 0 1.7Z" />
-                  <path d="M15 12 9 6l-2 2 6 6 2-2Z" />
+                <svg t="1746797640266" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" p-id="6258" width="30" height="30">
                   <path
-                    d="m22 12-5.3-5.3a1 1 0 0 0-1.4 0l-5.3 5.3 2 2 5.25-5 4.25 4a1 1 0 0 0 1.4-.3l.6-.5a1 1 0 0 0-.5-1.2Z" />
+                    d="M938.666667 553.92V768c0 64.8-52.533333 117.333333-117.333334 117.333333H202.666667c-64.8 0-117.333333-52.533333-117.333334-117.333333V256c0-64.8 52.533333-117.333333 117.333334-117.333333h618.666666c64.8 0 117.333333 52.533333 117.333334 117.333333v297.92z m-64-74.624V256a53.333333 53.333333 0 0 0-53.333334-53.333333H202.666667a53.333333 53.333333 0 0 0-53.333334 53.333333v344.48A290.090667 290.090667 0 0 1 192 597.333333a286.88 286.88 0 0 1 183.296 65.845334C427.029333 528.384 556.906667 437.333333 704 437.333333c65.706667 0 126.997333 16.778667 170.666667 41.962667z m0 82.24c-5.333333-8.32-21.130667-21.653333-43.648-32.917333C796.768 511.488 753.045333 501.333333 704 501.333333c-121.770667 0-229.130667 76.266667-270.432 188.693334-2.730667 7.445333-7.402667 20.32-13.994667 38.581333-7.68 21.301333-34.453333 28.106667-51.370666 13.056-16.437333-14.634667-28.554667-25.066667-36.138667-31.146667A222.890667 222.890667 0 0 0 192 661.333333c-14.464 0-28.725333 1.365333-42.666667 4.053334V768a53.333333 53.333333 0 0 0 53.333334 53.333333h618.666666a53.333333 53.333333 0 0 0 53.333334-53.333333V561.525333zM320 480a96 96 0 1 1 0-192 96 96 0 0 1 0 192z m0-64a32 32 0 1 0 0-64 32 32 0 0 0 0 64z"
+                    fill="#ffffff" p-id="6259"></path>
                 </svg>
               </div>
-              <h3 class="tool-name">增强</h3>
+              <h3 class="tool-name">绘画社区与协作</h3>
             </div>
             <div class="tool-content">
-              <div class="enhance-demo">
-                <div class="split-image">
-                  <img src="https://static.dzine.ai/tools/dashboard/ai-tools-cover/enhance.png"
-                    alt="Pixelated vs Enhanced">
-                  <div class="split-line"></div>
-                </div>
-              </div>
+              <img src="@/assets/images/4.png" alt="完整作品" style="width:100%;">
             </div>
           </div>
         </div>
 
-       
+
       </div>
     </section>
 
@@ -269,173 +123,13 @@
         AI设计平台
       </h1>
       <p class="hero-subtitle">
-        在一个平台即可完成任意人工智能生成和编辑。      
+        在一个平台即可完成任意人工智能生成和编辑。
       </p>
     </section>
-    <div class="feature-sections">
-      <!-- Section 1: AI Photo Filter -->
-      <section class="feature-section">
-        <div class="feature-container">
-          <div class="feature-image">
-                        <video class="vi" poster="https://static.dzine.ai/assets/pre_load-dz-800-400.jpeg" playsinline="" autoplay="" loop="" muted="" data-v-5f31b5ed=""><source src="https://static.dzine.ai/videos/AI%2BPhoto%2BFilter1.mp4" type="video/mp4" data-v-5f31b5ed=""></video>
 
-          </div>
-          <div class="feature-content">
-            <h2 class="feature-title">AI照片风格</h2>
-            <p class="feature-description">
-              使用我们的 <strong>AI滤镜</strong> ，将您的肖像或照片转换为卡通。我们的工具可以轻松地在生成艺术中保留你的照片细节和人物。
-            </p>
-            <a href="#" class="feature-button">改变你的照片风格</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 2: Combine Images with AI -->
-      <section class="feature-section feature-section-reverse">
-        <div class="feature-container">
-          <div class="feature-image feature-image-colored">
-            <video class="vi" poster="https://static.dzine.ai/assets/pre_load-dz-800-400.jpeg" playsinline="" autoplay="" loop="" muted="" data-v-5f31b5ed=""><source src="https://static.dzine.ai/videos/Combine+Images+with+AI.mp4" type="video/mp4" data-v-5f31b5ed=""></video>
-          </div>
-          <div class="feature-content">
-            <h2 class="feature-title">AI图像组合</h2>
-            <p class="feature-description">
-              使用 <strong>AI图像组合</strong> 生成式地将不同的元素合并为一个完整的图像，并使它们在风格上都匹配。.
-            </p>
-            <a href="#" class="feature-button">组合你的图片</a>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Section 3: AI Background Removal -->
-      <section class="feature-section">
-        <div class="feature-container">
-          <div class="feature-image">
-            <video class="vi" poster="https://static.dzine.ai/assets/pre_load-dz-800-400.jpeg" playsinline="" autoplay="" loop="" muted="" data-v-5f31b5ed=""><source src="https://static.dzine.ai/videos/Remove+Background.mp4" type="video/mp4" data-v-5f31b5ed=""></video>
-          </div>
-          <div class="feature-content">
-            <h2 class="feature-title">AI抠图</h2>
-            <p class="feature-description">
-              使用我们的 <strong>AI 抠图工具</strong> 完美地从您的图像中移除背景。
-            </p>
-            <a href="#" class="feature-button">快速移除背景</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4: AI Image Enhancer -->
-      <section class="feature-section feature-section-reverse">
-        <div class="feature-container">
-          <div class="feature-image feature-image-colored" style="--feature-bg-color: #D1C4E9;">
-            <video class="vi" poster="https://static.dzine.ai/assets/pre_load-dz-800-400.jpeg" playsinline="" autoplay="" loop="" muted="" data-v-5f31b5ed=""><source src="https://static.dzine.ai/videos/Remove+Background.mp4" type="video/mp4" data-v-5f31b5ed=""></video>
-          </div>
-          <div class="feature-content">
-            <h2 class="feature-title">AI图像增强器</h2>
-            <p class="feature-description">
-              使用我们的 <strong>AI图像增强器</strong> 将低质量图像转换为晶莹剔透的高分辨率视觉效果。
-            </p>
-            <a href="#" class="feature-button">增强图像</a>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Section 5: AI Text to Image -->
-      <section class="feature-section">
-        <div class="feature-container">
-          <div class="feature-image">
-            <video class="vi" poster="https://static.dzine.ai/assets/pre_load-dz-800-400.jpeg" playsinline="" autoplay="" loop="" muted="" data-v-5f31b5ed=""><source src="https://static.dzine.ai/videos/text-effect-logo-1.mp4" type="video/mp4" data-v-5f31b5ed=""></video>
-          </div>
-          <div class="feature-content">
-            <h2 class="feature-title">AI文生图</h2>
-            <p class="feature-description">
-              我们的 <strong>AI文生图工具</strong>
-              只需一个文本提示，将您的想法转化为令人惊叹的视觉效果。            
-            </p>
-            <a href="#" class="feature-button">Generate from text</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 6: AI Image Expansion -->
-      <section class="feature-section feature-section-reverse">
-        <div class="feature-container">
-          <div class="feature-image feature-image-colored" style="--feature-bg-color: #BBDEFB;">
-            <video class="vi" poster="https://static.dzine.ai/assets/pre_load-dz-800-400.jpeg" playsinline="" autoplay="" loop="" muted="" data-v-5f31b5ed=""><source src="https://static.dzine.ai/videos/generative-object-1.mp4" type="video/mp4" data-v-5f31b5ed=""></video>
-          </div>
-          <div class="feature-content">
-            <h2 class="feature-title">AI图片扩展</h2>
-            <p class="feature-description">
-              使用我们的 <strong>AI图片扩展工具</strong> 将您的图像扩展到原始边界之外。</p>
-            <a href="#" class="feature-button">扩展画布</a>
-          </div>
-
-        </div>
-      </section>
     </div>
-    <section class="use-cases-section">
-      <div class="container">
-        <h2 class="use-cases-title">AI 图像生成使用秘籍</h2>
-        <p class="use-cases-subtitle">专业人士怎么使用我们的工具？</p>
-
-        <div class="use-cases-tabs">
-          <button v-for="(tab, index) in tabs" :key="index" :class="['tab-button', { active: activeTab === index }]"
-            @click="setActiveTab(index)">
-            {{ tab.name }}
-          </button>
-        </div>
-
-        <div class="use-cases-content">
-          <div class="content-left">
-            <h3 class="content-title">{{ tabs[activeTab].title }}</h3>
-            <p class="content-description">{{ tabs[activeTab].description }}</p>
-          </div>
-
-          <div class="content-right">
-            <div class="image-carousel">
-              <div class="carousel-images" :style="{ transform: `translateX(-${activeImageIndex * 100}%)` }">
-                <img v-for="(image, index) in tabs[activeTab].images" :key="index" :src="image"
-                  :alt="`${tabs[activeTab].name} example ${index + 1}`" class="carousel-image" />
-              </div>
-
-              <div class="carousel-controls" v-if="tabs[activeTab].images.length > 1">
-                <button class="control-button prev" @click="prevImage" :disabled="activeImageIndex === 0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 18l-6-6 6-6" />
-                  </svg>
-                </button>
-                <div class="carousel-dots">
-                  <button v-for="(_, index) in tabs[activeTab].images" :key="index"
-                    :class="['dot', { active: activeImageIndex === index }]" @click="setActiveImage(index)"></button>
-                </div>
-                <button class="control-button next" @click="nextImage"
-                  :disabled="activeImageIndex === tabs[activeTab].images.length - 1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 18l6-6-6-6" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
 </template>
-<script>
-export default {
-  name: 'Home',
-  created() {
-    console.info('✅ 加载了 Home 页面组件')
-  },
-  mounted() {
-    console.log('📌 当前页面标题:', this.$route.meta.title)
-  }
-}
-</script>
+
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 
@@ -453,6 +147,114 @@ const loginForm = ref({
   password: '',
   rememberMe: false
 });
+
+// Tools data
+const tools = ref([
+  {
+    id: 1,
+    title: "Image-to-Image",
+    icon: 'svg-image',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-green",
+    isHovered: false
+  },
+  {
+    id: 2,
+    title: "Text-to-Image",
+    icon: 'svg-text',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-amber",
+    isHovered: false
+  },
+  {
+    id: 3,
+    title: "Face Swap",
+    icon: 'svg-user',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-purple",
+    isHovered: false
+  },
+  {
+    id: 4,
+    title: "Local Edit",
+    icon: 'svg-edit',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-green",
+    isHovered: false
+  },
+  {
+    id: 5,
+    title: "Insert Object",
+    icon: 'svg-plus',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-green",
+    isHovered: false
+  },
+  {
+    id: 6,
+    title: "AI Eraser",
+    icon: 'svg-eraser',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-blue",
+    isHovered: false
+  },
+  {
+    id: 7,
+    title: "Expand",
+    icon: 'svg-expand',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-purple",
+    isHovered: false
+  },
+  {
+    id: 8,
+    title: "Enhance",
+    icon: 'svg-wand',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-green",
+    isHovered: false
+  },
+  {
+    id: 9,
+    title: "Product Background",
+    icon: 'svg-bag',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-amber",
+    isHovered: false
+  },
+  {
+    id: 10,
+    title: "Image-to-3D",
+    icon: 'svg-cube',
+    beforeImage: "https://placeholder.pics/svg/112x112",
+    afterImage: "https://placeholder.pics/svg/112x112/DEDEDE-DEDEDE",
+    bgColor: "bg-green",
+    isHovered: false
+  }
+]);
+
+// Methods
+const closeLoginModal = (e) => {
+  if (e.target.classList.contains('modal-overlay')) {
+    showLoginModal.value = false;
+  }
+};
+
+const handleLogin = () => {
+  // Here you would typically handle the login logic
+  console.log('Login submitted:', loginForm.value);
+  alert('Login successful!');
+  showLoginModal.value = false;
+};
 
 const tabs = ref([
   {
@@ -906,7 +708,7 @@ body {
 .tool-card {
   border-radius: 16px;
   padding: 1.5rem;
-  height: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   position: relative;

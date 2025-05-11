@@ -1,0 +1,24 @@
+/* ===================== */
+/* === 全局颜色变量 === */
+/* ===================== */
+
+:root {
+  --color-background: #000000; /* 页面背景色 */
+  --color-foreground: #ffffff; /* 文字主色 */
+  --color-primary: #f5c518;     /* 主要按钮/强调色 */
+  --color-primary-hover: #e6b400; /* 主色悬停状态 */
+  --color-secondary: #1a1a1a;   /* 次要背景色 */
+  --color-secondary-hover: #2a2a2a; /* 次要背景悬停 */
+  --color-muted: #666666;       /* 灰色文字 */
+  --color-border: #333333;      /* 边框颜色 */
+
+  /* 背景渐变 */
+  --color-green-bg: linear-gradient(to bottom right, #0d3320, #051a10);
+  --color-amber-bg: linear-gradient(to bottom right, #3a2e00, #1a1500);
+  --color-purple-bg: linear-gradient(to bottom right, #2e0d3a, #15051a);
+  --color-blue-bg: linear-gradient(to bottom right, #0d1a3a, #05091a);
+
+  /* 圆角 & 过渡动画 */
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}

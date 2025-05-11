@@ -16,7 +16,7 @@
               <router-link to="/zh-hans/tutorials" class="nav-link">绘画教程</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="./inspiration" class="nav-link">创意灵感</router-link>
+              <router-link to="/zh-hans/inspiration" class="nav-link">创意灵感</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/zh-hans/community" class="nav-link">社区作品</router-link>
@@ -117,5 +117,6 @@ export default {
 main {
   flex: 1;
   padding: 20px 0;
+  margin-top: 60px;
 }
 </style>

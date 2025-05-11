@@ -337,7 +337,7 @@
                 <!-- Canvas Area - Shows image1 by default (when no tool is selected) -->
                 <div class="canvas-content">
                     <img v-if="!activeTool" alt="Default Canvas State"
-                        class="default-image" src="../img/lol.jpg">
+                        class="default-image" src="@/assets/images/lol.jpg">
 
                     <div v-else-if="showUploadZone" class="canvas-drop-area">
                         <div class="drop-content">
@@ -389,14 +389,14 @@
                     <div class="no-results">
                         <div class="result-icon">
                             <img alt="Boy and Dolphin"
-                                src="../img/dolphin.png">
+                                src="@/assets/images/dolphin.png">
                         </div>
                         <h4>Boy and Dolphin</h4>
                     </div>
                     <div class="no-results">
                         <div class="result-icon">
                             <img alt="Ari"
-                                src="../img/ari.png">
+                                src="@/assets/images/ari.png">
                         </div>
                         <h4>Ari</h4>
                     </div>

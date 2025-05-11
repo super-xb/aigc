@@ -3,7 +3,7 @@
       <!-- Left Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-header">
-          <a href="/public" class="logo">  <!--改logo-->
+          <a href="@/assets/images/logo.png" class="logo">  <!--改logo-->
             <img src="/favicon.ico" alt="Dzine Logo" class="logo-img">
             <span class="beta-tag">BETA</span>
           </a>
@@ -17,35 +17,9 @@
             </div>
             <div class="user-info">
               <div class="user-id">username<span class="chevron"></span></div>
-<!--              <div class="user-plan">Free</div>-->
             </div>
           </div>
   
-          <!-- Credits -->
-<!--          <div class="credits-section">-->
-<!--            <div class="credits-icon">-->
-<!--              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6.5a2.5 2.5 0 0 0 0 5h3a2.5 2.5 0 0 1 0 5H6"/><path d="M12 18v2m0-16v2"/></svg>-->
-<!--            </div>-->
-<!--            <div class="credits-label">Credits</div>-->
-<!--            <div class="credits-value">50</div>-->
-<!--          </div>-->
-  
-<!--          &lt;!&ndash; Premium Promo &ndash;&gt;-->
-<!--          <div class="premium-promo">-->
-<!--            <div class="crown-icon">-->
-<!--              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>-->
-<!--            </div>-->
-<!--            <div class="premium-text">-->
-<!--              <div class="premium-title">Try Premium for</div>-->
-<!--              <div class="premium-subtitle">7-days Free!</div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--  -->
-<!--          <div class="premium-description">-->
-<!--            Sign Up Today and Explore All the Benefits with a Free Trial Before You Decide.-->
-<!--          </div>-->
-<!--  -->
-<!--          <button class="start-free-button">Start FREE Trial</button>-->
   
           <!-- Navigation Menu -->
           <nav class="sidebar-nav">
@@ -85,13 +59,6 @@
               </div>
               <span>API</span>
             </a>
-            <a href="#" class="nav-item">
-              <div class="nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6a2 2 0 0 0 2 2h6"/><path d="M22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8"/><circle cx="12" cy="15" r="2"/><path d="M12 13v-2"/></svg>
-              </div>
-              <span>Pricing</span>
-            </a>
-  
             <div class="nav-divider"></div>
   
             <a href="#" class="nav-item">
@@ -100,12 +67,7 @@
               </div>
               <span>Tutorials</span>
             </a>
-            <a href="#" class="nav-item">
-              <div class="nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 19 22 12 13 5 13 19"/><polygon points="2 19 11 12 2 5 2 19"/></svg>
-              </div>
-              <span>Discord</span>
-            </a>
+
             <a href="#" class="nav-item">
               <div class="nav-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
@@ -519,18 +481,18 @@
   
   /* Sidebar */
   .sidebar {
-    width: 350px;
-    background-color: #121212;
-    border-right: 1px solid #222;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    overflow-y: auto;
-    z-index: 10;
-  }
+  width: 350px;
+  background-color: #121212;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px; /* 确保与导航栏高度一致 */
+  bottom: 60px;
+  left: 0;
+  overflow-y: auto;
+  z-index: 10;
+}
   
   .sidebar-header {
     padding: 1.5rem;

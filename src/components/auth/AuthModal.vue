@@ -1,9 +1,7 @@
 <template>
   <div class="modal-mask" v-if="visible" @click.self="closeModal">
     <div class="modal-container fade-in">
-      <button class="modal-close-btn" @click="closeModal">
-        <font-awesome-icon icon="xmark" />
-      </button>
+      <button class="modal-close-btn" @click="closeModal">x</button>
       <h3>登录</h3>
       <form>
         <label for="username">用户名：</label>
@@ -18,11 +16,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
   props: {

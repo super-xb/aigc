@@ -1,56 +1,68 @@
-// index.js
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import NotFound from "@/views/NotFound.vue";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import NotFound from '@/pages/NotFound.vue'
 
-// 懒加载组件
-const HomeView = () => import('../views/HomeView.vue');
-const Index = () => import('@/pages/zh-hans/index.vue');
-const Dashboard = () => import('@/pages/zh-hans/dashboard.vue');
-const Tool = () => import('@/pages/zh-hans/tool.vue');
+// 按需加载组件
+const home = () => import('@/pages/zh-hans/home.vue')
+const inspiration = () => import('@/pages/zh-hans/inspiration.vue')
+const tutorials = () => import('@/pages/zh-hans/tutorials.vue')
+// const community = () => import('@/pages/zh-hans/community.vue')
+const profile = () => import('@/pages/zh-hans/profile.vue')
+// const help = () => import('@/pages/zh-hans/help.vue')
 
-
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
+  // 根路径重定向到 /zh-hans
   {
     path: '/',
-    redirect: '/zh-hans',
+    redirect: '/zh-hans'
   },
+  // /zh-hans 路由作为 layout 或一级父路由
   {
     path: '/zh-hans',
-    component: HomeView,
+    component: {
+      // 一个简单的布局组件
+      render(c) { return c('router-view') }
+    },
+    redirect: '/zh-hans/home',
     children: [
       {
-        path: '',
-        name: 'home',
-        component: Index,
-        meta: { title: '首页' },
+        path: 'home',
+        component: home
       },
       {
-        path: 'dashboard',
-        name: 'dashboard',
-        component: Dashboard,
-        meta: { title: '仪表盘' },
+        path: 'inspiration',
+        component: inspiration
       },
       {
-        path: 'tool',
-        name: 'tool',
-        component: Tool,
-        meta: { title: '工具' },
-      }
-    ],
+        path: 'tutorials',
+        component: tutorials
+      },
+      // {
+      //   path: 'community',
+      //   component: community
+      // },
+      {
+        path: 'profile',
+        component: profile
+      },
+      // {
+      //   path: 'help',
+      //   component: help
+      // }
+    ]
   },
+  // 404 页面
   {
     path: '*',
-    name: '404',
-    component: NotFound, // 使用 NotFound 组件
-  },
-];
+    component: NotFound
+  }
+]
 
 const router = new VueRouter({
-  mode: 'history', // 使用历史模式
-  routes,
-});
+  mode: 'history', // 或 'hash'
+  routes
+})
 
-export default router;
+export default router

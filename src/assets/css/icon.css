@@ -1,0 +1,28 @@
+/* ================ */
+/* === 图标样式 === */
+/* ================ */
+
+[class^="svg-"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.svg-image,
+.svg-text,
+.svg-user,
+.svg-edit,
+.svg-plus,
+.svg-eraser,
+.svg-expand,
+.svg-wand,
+.svg-bag,
+.svg-cube {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}

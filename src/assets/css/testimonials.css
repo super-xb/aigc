@@ -1,0 +1,24 @@
+/* ==================== */
+/* === 用户评价区域 === */
+/* ==================== */
+
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: var(--color-secondary);
+  text-align: center;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius);
+  text-align: left;
+}

@@ -1,0 +1,64 @@
+/* ==================== */
+/* === 导航栏与菜单 === */
+/* ==================== */
+
+.navbar {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 子元素在主轴方向两端对齐 */
+    align-items: center; /* 子元素在交叉轴方向居中对齐 */
+    padding: 1rem 2rem; /* 内边距：上下 1rem，左右 2rem */
+    border-bottom: 1px solid var(--color-border); /* 底部边框，颜色由 CSS 变量定义 */
+    position: sticky; /* 使导航栏在滚动时固定在顶部 */
+    top: 0; /* 距离顶部 0 */
+    background-color: rgba(0, 0, 0, 0.9); /* 背景颜色为黑色，透明度 90% */
+    -webkit-backdrop-filter: blur(10px); /* Safari 浏览器的模糊效果 */
+    backdrop-filter: blur(10px); /* 现代浏览器的模糊效果 */
+    z-index: 100; /* 设置堆叠顺序，确保导航栏位于其他元素之上 */
+}
+
+.logo {
+    font-size: 1.5rem; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    color: var(--color-foreground); /* 字体颜色由 CSS 变量定义 */
+    text-decoration: none; /* 去掉下划线 */
+    margin-right: 2rem; /* 右外边距 */
+}
+
+.beta {
+    font-size: 0.6rem; /* 字体大小较小 */
+    vertical-align: super; /* 垂直对齐为上标 */
+    color: var(--color-muted); /* 字体颜色为淡色 */
+    margin-left: 2px; /* 左外边距 */
+}
+
+.nav-links {
+    display: flex; /* 使用 Flexbox 布局 */
+    gap: 1.5rem; /* 子元素之间的间距为 1.5rem */
+}
+
+.nav-link {
+    color: #fff; /* 链接文字颜色为白色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: var(--transition); /* 添加过渡效果，具体由 CSS 变量定义 */
+    margin-right: 2rem; /* 右外边距 */
+    font-size: 1.2rem; /* 字体大小 */
+}
+
+.nav-link:hover {
+    color: var(--color-foreground); /* 鼠标悬停时，文字颜色变为前景色 */
+}
+
+.btn-primary {
+    background-color: var(--color-primary); /* 按钮背景颜色由 CSS 变量定义 */
+    color: #000; /* 按钮文字颜色为黑色 */
+    border: none; /* 无边框 */
+    padding: 0.5rem 1rem; /* 内边距：上下 0.5rem，左右 1rem */
+    border-radius: var(--border-radius); /* 圆角半径由 CSS 变量定义 */
+    font-weight: 500; /* 字体加粗程度 */
+    cursor: pointer; /* 鼠标悬停时显示为指针 */
+    transition: var(--transition); /* 添加过渡效果 */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover); /* 鼠标悬停时，背景颜色变为悬停状态的颜色 */
+}
