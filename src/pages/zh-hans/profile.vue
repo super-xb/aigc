@@ -3,23 +3,31 @@
       <!-- Left Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-header">
-          <a href="/public" class="logo">
-            <img src="/favicon.ico" alt="Dzine Logo" class="logo-img">
-            <span class="beta-tag">BETA</span>
+          <a href="/" class="logo">
+             创意绘画伙伴
+
           </a>
         </div>
+
   
         <div class="sidebar-content">
           <!-- User Profile -->
           <div class="user-profile">
             <div class="avatar">
-              <img src="/user.png" alt="User Avatar">
+<img src="@/assets/images/dog.png" alt="User Avatar" class="user-avatar">
             </div>
             <div class="user-info">
-              <div class="user-id">用户名<span class="chevron">›</span></div>
+              <div class="user-id">超级汪汪队<span class="chevron">›</span></div>
+              <div class="user-plan">正式用户</div>
             </div>
           </div>
+  
 
+  
+
+  
+
+  
           <!-- Navigation Menu -->
           <nav class="sidebar-nav">
             <a href="#" class="nav-item">
@@ -52,18 +60,8 @@
               </div>
               <span>资源库</span>
             </a>
-            <a href="#" class="nav-item">
-              <div class="nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-              </div>
-              <span>API</span>
-            </a>
-            <a href="#" class="nav-item">
-              <div class="nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6a2 2 0 0 0 2 2h6"/><path d="M22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8"/><circle cx="12" cy="15" r="2"/><path d="M12 13v-2"/></svg>
-              </div>
-              <span>充值</span>
-            </a>
+
+
   
             <div class="nav-divider"></div>
   
@@ -115,23 +113,10 @@
             </div>
           </div>
           
-          <div class="feature-carousel">
-            <div class="carousel-container" ref="carouselContainer">
-              <div class="carousel-track" :style="{ transform: `translateX(-${activeSlide * 100}%)` }">
-                <div class="carousel-slide" v-for="(slide, index) in carouselSlides" :key="index">
-                  <img :src="slide.image" :alt="slide.alt" class="carousel-image">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-indicators">
-              <button 
-                v-for="(slide, index) in carouselSlides" 
-                :key="index"
-                :class="['indicator', { active: activeSlide === index }]"
-                @click="setActiveSlide(index)"
-              ></button>
-            </div>
-          </div>
+         <div class="feature-carousel">
+  <!-- 添加圆角和裁剪效果 -->
+  <img src="@/assets/images/0.png" alt="固定图片" class="carousel-image">
+</div>
         </section>
   
         <!-- Recent Projects -->
@@ -141,7 +126,7 @@
             <div class="section-actions">
               <button class="import-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                Import PSD file
+                上传 PSD 文件
               </button>
               <button class="view-all-button">所有项目</button>
             </div>
@@ -183,7 +168,7 @@
                 <div class="tool-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
                 </div>
-                <span class="tool-name">图生图</span>
+                <span class="tool-name">绘画学习助手</span>
               </div>
               <div class="tool-demo">
                 <div class="before-image">
@@ -235,7 +220,6 @@
             </div>
             
             <div class="tool-card_a tool-image-to-video">
-              <div class="premium-badge">高级版</div>
               <div class="tool-header">
                 <div class="tool-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
@@ -256,7 +240,6 @@
             </div>
             
             <div class="tool-card_a tool-lip-sync">
-              <div class="premium-badge">高级版</div>
               <div class="tool-header">
                 <div class="tool-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v12"/><path d="M6 12h12"/></svg>
@@ -324,7 +307,6 @@
           
           <div class="styles-grid">
             <div class="style-card">
-              <div class="premium-badge">高级版</div>
               <div class="style-icon">
                 <img src="https://static.dzine.ai/assets/panel-swap-bbdd2e37.svg" alt="Quick Style icon">
               </div>
@@ -332,7 +314,6 @@
             </div>
             
             <div class="style-card">
-              <div class="premium-badge">高级版</div>
               <div class="style-icon">
                 <img src="https://static.dzine.ai/assets/panel-traning-c1be96fb.svg" alt="Pro Style icon">
               </div>
@@ -366,7 +347,6 @@
             </div>
             
             <div class="game-design-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/a2587147e2b990404086b4c61044ffe8/1727230427074993_Art-Reference.webp" alt="Art Reference">
               </div>
@@ -374,7 +354,6 @@
             </div>
             
             <div class="game-design-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/5649fcf0f49ae41a64dc6b2d20c3822d/1737013605836734_Prop-Refinement.webp" alt="Refine Details">
               </div>
@@ -400,7 +379,6 @@
           
           <div class="photography-grid">
             <div class="photography-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/6b251bc0edff6070b3fdc652002c6d81/1727244858324979_Portrait-Enhance.webp" alt="Photography example 1">
               </div>
@@ -408,7 +386,6 @@
             </div>
             
             <div class="photography-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/fe0de824c87bf5bb508e9c4298f1352d/1727244806410796_Remove-Object.webp" alt="Photography example 2">
               </div>
@@ -416,7 +393,6 @@
             </div>
             
             <div class="photography-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/4016ad69b170cce555252456bb1dae35/1737013845114467_20250116-154242.jpg.webp" alt="Photography example 3">
                 <div class="photo-tag">一件黑色花纹的裙子</div>
@@ -425,7 +401,6 @@
             </div>
             
             <div class="photography-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/15a6e098c2a4152114a743680a9de1c2/1727244565925145_Add-Object.webp" alt="Photography example 4">
               </div>
@@ -433,7 +408,6 @@
             </div>
             
             <div class="photography-card">
-              <div class="premium-badge">高级版</div>
               <div class="card-image">
                 <img src="https://static.dzine.ai/stylar_admin/common/style_avatar/0bbf0b77730d7f0191ecf6f5ba435dc6/1727244476338176_Model-Face-Swap.webp" alt="Photography example 5">
               </div>
@@ -496,7 +470,7 @@
   
   /* Sidebar */
   .sidebar {
-    width: 350px;
+    width: 225px;
     background-color: #121212;
     border-right: 1px solid #222;
     display: flex;
@@ -527,7 +501,7 @@
   }
   
   .beta-tag {
-    font-size: 1.5rem;
+    font-size: 0.6rem;
     color: #f5c518;
     margin-left: 4px;
     font-weight: 600;
@@ -693,7 +667,7 @@
   /* Main Content */
   .main-content {
     flex: 1;
-    margin-left: 350px;
+    margin-left: 225px;
     padding: 2rem;
     overflow-y: auto;
   }
@@ -1293,7 +1267,11 @@
       flex-direction: column;
       width: 100%;
     }
-    
+    .carousel-image {
+    width: 60%; /* 或者你可以设置具体的宽度，比如 300px */
+    height: 100px; /* 设置固定的高度 */
+    border-radius: 20px; /* 添加圆角 */
+    }
     .primary-button, .secondary-button {
       width: 100%;
     }

@@ -6,9 +6,9 @@ import NotFound from '@/pages/NotFound.vue'
 const home = () => import('@/pages/zh-hans/home.vue')
 const inspiration = () => import('@/pages/zh-hans/inspiration.vue')
 const tutorials = () => import('@/pages/zh-hans/tutorials.vue')
-// const community = () => import('@/pages/zh-hans/community.vue')
+const community = () => import('@/pages/zh-hans/community.vue')
 const profile = () => import('@/pages/zh-hans/profile.vue')
-// const help = () => import('@/pages/zh-hans/help.vue')
+const help = () => import('@/pages/zh-hans/help.vue')
 
 Vue.use(VueRouter)
 
@@ -39,18 +39,18 @@ const routes = [
         path: 'tutorials',
         component: tutorials
       },
-      // {
-      //   path: 'community',
-      //   component: community
-      // },
+      {
+        path: 'community',
+        component: community
+      },
       {
         path: 'profile',
         component: profile
       },
-      // {
-      //   path: 'help',
-      //   component: help
-      // }
+      {
+        path: 'help',
+        component: help
+      }
     ]
   },
   // 404 页面
